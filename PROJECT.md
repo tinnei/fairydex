@@ -8,7 +8,7 @@ Both roles read this file before starting a task, then follow the relevant techn
 
 ## Product goal and scope
 
-Help learners photograph common flowers in Macau and understand the visible evidence behind candidate identifications. Current flow: upload a photo → engine analysis → candidates and evidence. Keep the engineering interface minimal. `/collect` gathers photos with location and time for identification at home.
+Help learners photograph common flowers in Macau and understand the visible evidence behind candidate identifications. Current flow: upload a photo → engine analysis → candidates and evidence. Keep the engineering interface minimal. `/collect` supports a personal phone notebook: take or upload a photo, review it, then save an unidentified observation. Observation time, location and notes are optional; available photo metadata is extracted automatically.
 
 Prioritize the identification backbone before botanical illustrations and deeper educational presentation. Total petal count and actual leaf arrangement are desired capabilities, not delivered capabilities.
 
@@ -207,3 +207,18 @@ Only 30 development images were run: **4 uniquely correct, 6 wrong, 18 tied, 2 u
 Validation: 59 tests passed, including tie handling, provenance uniqueness and split checks. A JavaScript DOM harness loaded the baseline and filtered six wrong results and twenty reserved entries; it did not validate browser layout or mask accuracy. Reference-label agreement is not general identification accuracy. No organ-mask ground truth exists yet.
 
 Next: review development failures and ties, annotate whether masks target the correct object, and separate missing measurements from broad or conflicting profiles before tuning. Keep reserved images untouched until an engine revision and evaluation criteria are fixed.
+
+
+## 2026-09-15 — personal phone collection
+
+Updated `/collect` to Take photo or Upload photo → preview/retake → Save. Edit details starts collapsed; observation time, coordinates and notes remain optional.
+
+Standard EXIF capture metadata is read from JPEG, PNG eXIf and WebP EXIF. Capture dates use DateTimeOriginal or digitized time, with calendar and GPS validation. Dates without a timezone retain their wall-clock value separately and leave `observedAt` unknown. Missing, malformed or unsupported metadata does not prevent saving a supported photo.
+
+The previous form required a time and defaulted to now. This behavior is superseded because older uploads could be misdated. Uploads now never automatically receive current time or location. A camera picker does not prove a fresh capture, so the user must confirm “just now” before current time/location fallback; phone location still requires permission. Revision guards prevent delayed metadata or geolocation results from overriding replacements, edits or cleared fields. Failed saves preserve the selected photo for retry.
+
+Implementation reused the unfinished draft on verified Sites source v29, commit `73c6c1f4f864f93bb0ff028775f520e72bc212c0`. Validation: **70 automated tests pass**, comprising the 59-test baseline and eleven new checks. Existing per-user R2 storage, authentication and recognition behavior are preserved; legacy location-source records remain compatible. The image engine remains 0.15.
+
+**Limitations:** HEIC is unsupported. Metadata can be absent or stripped, and unknown details remain optional. Manual times use the phone's current timezone; offset-free photo timestamps retain their original wall-clock value. Real-phone native capture, permission behavior and browser layout have not yet been verified. Publication is verified separately by the deployment response.
+
+**Next:** verify the flow on a real phone, including older uploads, retakes and location denial. Collection URL: https://flower-lens-field-guide.tinneibook.chatgpt.site/collect .
