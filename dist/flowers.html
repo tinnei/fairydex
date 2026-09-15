@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Current flower candidates and growth stages in the Flower Lens identification engine.">
+  <title>Flower list · Flower Lens</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/flowers.css">
+  <script src="/engine-profiles.js" defer></script>
+  <script src="/flower-expansion.js" defer></script>
+  <script src="/botanical-knowledge.js" defer></script>
+  <script src="/flowers.js" defer></script>
+</head>
+<body class="catalogue">
+  <header><strong>PLANT_ID_ENGINE <span>/ FLOWER LIST</span></strong><nav class="header-links" aria-label="Project"><a href="/knowledge">Feature lab</a><a href="/">Back to test bench</a></nav></header>
+  <main>
+    <div class="catalogue-heading"><h1>Current flower list</h1><span id="catalogueCount"></span></div>
+    <p class="catalogue-note">The image engine compares these 12 candidates. All 22 listed flowers now have botanical reference records in the feature lab. Identification is experimental and still requires review; many entries identify a genus or group rather than an exact species.</p>
+    <div class="catalogue-table"><table><caption class="sr-only">Flower candidates, scientific names, identification level and supported growth stages</caption><thead><tr><th scope="col">Flower</th><th scope="col">Scientific name</th><th scope="col">Identification level</th><th scope="col">Growth stages</th></tr></thead><tbody id="flowerRows"></tbody></table></div>
+    <section class="expansion" aria-labelledby="expansionHeading">
+      <div class="catalogue-heading"><h2 id="expansionHeading">Extended reference list</h2><span>10 knowledge-ready · image support pending</span></div>
+      <p class="catalogue-note">A starting list for Macau field scouting, plus extra reference flowers requested for comparison. Wikimedia Commons collections are available for each entry; local locations and frequency still need checking. Botanical feature records are ready for manual testing; automatic image support is still pending.</p>
+      <div class="catalogue-table"><table><caption class="sr-only">Proposed flowers and Wikimedia Commons reference collections</caption><thead><tr><th scope="col">Flower</th><th scope="col">Scientific name</th><th scope="col">Testing focus</th><th scope="col">Reference images</th></tr></thead><tbody id="expansionRows"></tbody></table></div>
+    </section>
+    <noscript><p>Enable JavaScript to load the current flower list from the engine.</p></noscript>
+  </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feature lab · Flower Lens</title><link rel="stylesheet" href="/knowledge.css">
+<script defer src="/botanical-knowledge.js"></script><script defer src="/knowledge-ranker.js"></script><script defer src="/knowledge-cases.js"></script><script defer src="/knowledge-lab.js"></script></head>
+<body><header><strong>FLOWER LENS / FEATURE LAB</strong><nav><a href="/">Image test</a><a href="/flowers">Flower list</a></nav></header>
+<main><h1>Test botanical features</h1><p class="intro">Compare observations against 22 reference records. Enter only what you can see. These fields are manual observations, not automatic image detections.</p>
+<section class="tools"><label>Reference photo <input id="photo" type="file" accept="image/jpeg,image/png,image/webp"></label><label>Example evidence <select id="example"><option value="">Choose a synthetic case</option></select></label><button id="clear" type="button">Clear evidence</button><button id="download" type="button">Export test JSON</button></section>
+<p id="photoStatus" role="status"></p><img id="referencePhoto" alt="Reference photo for manual feature inspection" hidden>
+<form id="observationForm" aria-label="Observed features"></form>
+<p class="hint">“Many” means more than six. Count one flower, or rays on one head. Unknown fields abstain. Choose a stage when visible; leaf-only tests can use Vegetative.</p>
+<section aria-labelledby="resultsHeading"><div class="result-heading"><h2 id="resultsHeading">Part rankings → overall agreement</h2><strong id="status" role="status"></strong></div><p id="resultNote"></p>
+<div class="table-scroll"><table><thead><tr><th>Rank</th><th>Candidate / reference scope</th><th>Stage hypotheses</th><th>Flower</th><th>Leaf</th><th>Context</th><th>Fruit</th><th>Overall</th></tr></thead><tbody id="results"></tbody></table></div>
+<details><summary>Observation and result JSON</summary><pre id="raw"></pre></details></section>
+<section id="reference" aria-labelledby="referenceHeading"><h2 id="referenceHeading">Reference knowledge</h2><label>Flower <select id="referenceSelect"></select></label><div id="referenceDetails"></div></section>
+</main></body></html>

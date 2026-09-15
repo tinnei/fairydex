@@ -1,0 +1,6829 @@
+{
+  "id": "2026-09-15T13-29-33-292Z",
+  "createdAt": "2026-09-15T13:29:33.292Z",
+  "datasetHash": "db75699ac182cf4ade3c0deb62df20debb6396fd08f0f99c47fe56ae43230c0c",
+  "engineHash": "5a84969a59c259a9247d574d395399a81578dbfa94bd5647124f230bcf196922",
+  "split": "development",
+  "options": {},
+  "labelPolicy": "Reference-label agreement only. Commons descriptions and images screened for supported flower group and flowering stage; not botanist-verified ground truth.",
+  "reservedExposed": false,
+  "summary": {
+    "total": 30,
+    "counts": {
+      "correct": 4,
+      "wrong": 6,
+      "tied": 18,
+      "unresolved": 2,
+      "error": 0,
+      "unsupported": 0
+    },
+    "top1": 4,
+    "top3": 17,
+    "top3TieInclusive": 22,
+    "leafAvailable": 1,
+    "leafWins": 0,
+    "leafLosses": 0
+  },
+  "rows": [
+    {
+      "id": "sunflower-01",
+      "status": "wrong",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "leaders": [
+        "ixora"
+      ],
+      "expectedScore": 0,
+      "flowerOnly": {
+        "status": "wrong",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "leaders": [
+          "ixora"
+        ],
+        "expectedScore": 0
+      },
+      "milliseconds": 481,
+      "candidates": [
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.9456666786886432,
+          "flower_score": 0.9456666786886432,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.9456666786886432,
+          "flower_score": 0.9456666786886432,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.8928571428571428,
+          "flower_score": 0.8928571428571428,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8333333333333333,
+          "flower_score": 0.8333333333333333,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.8028095358315004,
+          "flower_score": 0.8028095358315004,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7857142857142857,
+          "flower_score": 0.7857142857142857,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.7642857142857142,
+          "flower_score": 0.7642857142857142,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.6904761904761905,
+          "flower_score": 0.6904761904761905,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.6170952501172147,
+          "flower_score": 0.6170952501172147,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 5,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.04288550096103988,
+        "exposure_clipping": 0.17346587224383916
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region too small or unreliable",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region too small or unreliable",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/sunflower-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/sunflower-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "sunflower-02",
+      "status": "correct",
+      "top1": true,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "sunflower"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "correct",
+        "top1": true,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "sunflower"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1538,
+      "candidates": [
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.9375,
+          "flower_score": 0.9375,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9375,
+          "flower_score": 0.9375,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9326267056530214,
+          "flower_score": 0.9326267056530214,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7738095238095237,
+          "flower_score": 0.7738095238095237,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.7592667183832598,
+          "flower_score": 0.7592667183832598,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.723552432668974,
+          "flower_score": 0.723552432668974,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7023809523809523,
+          "flower_score": 0.7023809523809523,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.696543461053326,
+          "flower_score": 0.696543461053326,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.6230820296971578,
+          "flower_score": 0.6230820296971578,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.530224886840015,
+          "flower_score": 0.530224886840015,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5156010255996124,
+          "flower_score": 0.5156010255996124,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 2,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.021162748588524346,
+        "exposure_clipping": 0.044159109607402686
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": "contrasting_centre_with_surrounding_yellow_region",
+          "status": "region_candidate",
+          "reason": "Disc/ray region hypothesis; does not resolve a column or cluster of stamens",
+          "evidence": [
+            {
+              "view": "centreMaskPreview"
+            },
+            {
+              "view": "rayMaskPreview"
+            }
+          ]
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": "broad",
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "Selected green region silhouette; leaf/leaflet hypothesis"
+      },
+      "leafAvailable": true,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/sunflower-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/sunflower-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "sunflower-03",
+      "status": "correct",
+      "top1": true,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "sunflower"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "correct",
+        "top1": true,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "sunflower"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 2380,
+      "candidates": [
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.9375,
+          "flower_score": 0.9375,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9375,
+          "flower_score": 0.9375,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9297854620446112,
+          "flower_score": 0.9297854620446112,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7738095238095237,
+          "flower_score": 0.7738095238095237,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.7603375744653178,
+          "flower_score": 0.7603375744653178,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.7246232887510321,
+          "flower_score": 0.7246232887510321,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7023809523809523,
+          "flower_score": 0.7023809523809523,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.629502502688543,
+          "flower_score": 0.629502502688543,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.584214780327172,
+          "flower_score": 0.584214780327172,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.49135763747002925,
+          "flower_score": 0.49135763747002925,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.4756629201475685,
+          "flower_score": 0.4756629201475685,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 109,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.043580121887718835,
+        "exposure_clipping": 0.1091037326388889
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": "contrasting_centre_with_surrounding_yellow_region",
+          "status": "region_candidate",
+          "reason": "Disc/ray region hypothesis; does not resolve a column or cluster of stamens",
+          "evidence": [
+            {
+              "view": "centreMaskPreview"
+            },
+            {
+              "view": "rayMaskPreview"
+            }
+          ]
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/sunflower-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/sunflower-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "sunflower-04",
+      "status": "not_run"
+    },
+    {
+      "id": "sunflower-05",
+      "status": "not_run"
+    },
+    {
+      "id": "hibiscus-01",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "bougainvillea"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "bougainvillea"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1883,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.986574606382919,
+          "flower_score": 0.986574606382919,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9508603206686334,
+          "flower_score": 0.9508603206686334,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9429262862397754,
+          "flower_score": 0.9429262862397754,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.8701240192987704,
+          "flower_score": 0.8701240192987704,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.8179262862397754,
+          "flower_score": 0.8179262862397754,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8056222254305381,
+          "flower_score": 0.8056222254305381,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7857970740620029,
+          "flower_score": 0.7857970740620029,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.6905589788239077,
+          "flower_score": 0.6905589788239077,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 38,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01817453056826197,
+        "exposure_clipping": 0.014775815217391304
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/hibiscus-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/hibiscus-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "hibiscus-02",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "poppy"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "poppy"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1301,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9869698467621901,
+          "flower_score": 0.9869698467621901,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.967061967015816,
+          "flower_score": 0.967061967015816,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9655412753336187,
+          "flower_score": 0.9655412753336187,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.9152095670720503,
+          "flower_score": 0.9152095670720503,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.8840656758784874,
+          "flower_score": 0.8840656758784874,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.8794952813577646,
+          "flower_score": 0.8794952813577646,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8203031800955234,
+          "flower_score": 0.8203031800955234,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.8008089768891038,
+          "flower_score": 0.8008089768891038,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.7923108827668547,
+          "flower_score": 0.7923108827668547,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7055708816510086,
+          "flower_score": 0.7055708816510086,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 60,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.018959656201169288,
+        "exposure_clipping": 0.005116087647593097
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/hibiscus-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/hibiscus-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "hibiscus-03",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "bougainvillea"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "bougainvillea"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1436,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9757555653840122,
+          "flower_score": 0.9757555653840122,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9443891229414018,
+          "flower_score": 0.9443891229414018,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9088451791822875,
+          "flower_score": 0.9088451791822875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.8193891229414018,
+          "flower_score": 0.8193891229414018,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7874292690625468,
+          "flower_score": 0.7874292690625468,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.705517470145917,
+          "flower_score": 0.705517470145917,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.6921911738244516,
+          "flower_score": 0.6921911738244516,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 16,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.020736549313893262,
+        "exposure_clipping": 0.0899970921779587
+      },
+      "observations": {
+        "petalShape": {
+          "value": "mixed",
+          "status": "region_candidate",
+          "reason": "Shape of separated outer regions; individual petal anatomy unverified",
+          "evidence": [
+            {
+              "view": "petalPreview",
+              "region": 1,
+              "shape": "broad"
+            },
+            {
+              "view": "petalPreview",
+              "region": 2,
+              "shape": "broad"
+            },
+            {
+              "view": "petalPreview",
+              "region": 3,
+              "shape": "intermediate"
+            }
+          ]
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": 3,
+          "status": "region_candidate",
+          "unit": "visible_outer_region",
+          "reason": "Numbered regions, not total anatomical petals",
+          "evidence": [
+            {
+              "view": "petalPreview",
+              "region": 1
+            },
+            {
+              "view": "petalPreview",
+              "region": 2
+            },
+            {
+              "view": "petalPreview",
+              "region": 3
+            }
+          ]
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/hibiscus-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/hibiscus-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "hibiscus-04",
+      "status": "not_run"
+    },
+    {
+      "id": "hibiscus-05",
+      "status": "not_run"
+    },
+    {
+      "id": "ixora-01",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "ixora",
+        "bougainvillea"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "ixora",
+          "bougainvillea"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1513,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9757696731735125,
+          "flower_score": 0.9757696731735125,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.946701893786291,
+          "flower_score": 0.946701893786291,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.946701893786291,
+          "flower_score": 0.946701893786291,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.8642062761209889,
+          "flower_score": 0.8642062761209889,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7896098553386662,
+          "flower_score": 0.7896098553386662,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.7083333333333333,
+          "flower_score": 0.7083333333333333,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.694371760100571,
+          "flower_score": 0.694371760100571,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 21,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.023374787297368613,
+        "exposure_clipping": 0.062399839743589744
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/ixora-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/ixora-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "ixora-02",
+      "status": "wrong",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "dandelion"
+      ],
+      "expectedScore": 0.9649133092724411,
+      "flowerOnly": {
+        "status": "wrong",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "dandelion"
+        ],
+        "expectedScore": 0.9649133092724411
+      },
+      "milliseconds": 1145,
+      "candidates": [
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9863418807010126,
+          "flower_score": 0.9863418807010126,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9649133092724411,
+          "flower_score": 0.9649133092724411,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.9549481701468572,
+          "flower_score": 0.9549481701468572,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.874053592500568,
+          "flower_score": 0.874053592500568,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.8383393067862823,
+          "flower_score": 0.8383393067862823,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7786246751215734,
+          "flower_score": 0.7786246751215734,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.7220001184209079,
+          "flower_score": 0.7220001184209079,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7023809523809523,
+          "flower_score": 0.7023809523809523,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.6504303340759966,
+          "flower_score": 0.6504303340759966,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.5575731912188537,
+          "flower_score": 0.5575731912188537,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.25,
+          "flower_score": 0.25,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 46,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.022682267351373415,
+        "exposure_clipping": 0.059208718117854005
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/ixora-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/ixora-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "ixora-03",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "ixora",
+        "lantana",
+        "bougainvillea",
+        "poppy",
+        "clover"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "ixora",
+          "lantana",
+          "bougainvillea",
+          "poppy",
+          "clover"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 997,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9462708291131168,
+          "flower_score": 0.9462708291131168,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.9462708291131168,
+          "flower_score": 0.9462708291131168,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8333333333333333,
+          "flower_score": 0.8333333333333333,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7886208781062849,
+          "flower_score": 0.7886208781062849,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.6933827828681897,
+          "flower_score": 0.6933827828681897,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 17,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.04018554576300126,
+        "exposure_clipping": 0.052336516203703706
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/ixora-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/ixora-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "ixora-04",
+      "status": "not_run"
+    },
+    {
+      "id": "ixora-05",
+      "status": "not_run"
+    },
+    {
+      "id": "lantana-01",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "ixora",
+        "lantana",
+        "waterlily",
+        "plumeria"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "ixora",
+          "lantana",
+          "waterlily",
+          "plumeria"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 945,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9996412209526964,
+          "flower_score": 0.9996412209526964,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.9162053793201335,
+          "flower_score": 0.9162053793201335,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.8655940406866822,
+          "flower_score": 0.8655940406866822,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.801158298135568,
+          "flower_score": 0.801158298135568,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.7497474404138524,
+          "flower_score": 0.7497474404138524,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7059202028974728,
+          "flower_score": 0.7059202028974728,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.6829741256897182,
+          "flower_score": 0.6829741256897182,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5798797549723966,
+          "flower_score": 0.5798797549723966,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.25,
+          "flower_score": 0.25,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 31,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.02766434097930461,
+        "exposure_clipping": 0.08417508417508418
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/lantana-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/lantana-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "lantana-02",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "leaders": [
+        "hibiscus",
+        "plumeria",
+        "bougainvillea",
+        "waterlily"
+      ],
+      "expectedScore": 0.9956184907676124,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "leaders": [
+          "hibiscus",
+          "plumeria",
+          "bougainvillea",
+          "waterlily"
+        ],
+        "expectedScore": 0.9956184907676124
+      },
+      "milliseconds": 1402,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9956184907676124,
+          "flower_score": 0.9956184907676124,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.974189919339041,
+          "flower_score": 0.974189919339041,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.9701237124816418,
+          "flower_score": 0.9701237124816418,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9463141886721179,
+          "flower_score": 0.9463141886721179,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.8053825035045838,
+          "flower_score": 0.8053825035045838,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.7828404405907063,
+          "flower_score": 0.7828404405907063,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 3,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.017321226761589814,
+        "exposure_clipping": 0.0014816810344827585
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/lantana-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/lantana-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "lantana-03",
+      "status": "wrong",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "bluebell"
+      ],
+      "expectedScore": 0.908704390847248,
+      "flowerOnly": {
+        "status": "wrong",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "bluebell"
+        ],
+        "expectedScore": 0.908704390847248
+      },
+      "milliseconds": 380,
+      "candidates": [
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.9133094796360102,
+          "flower_score": 0.9133094796360102,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.908704390847248,
+          "flower_score": 0.908704390847248,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.8800247371675943,
+          "flower_score": 0.8800247371675943,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.856166622493153,
+          "flower_score": 0.856166622493153,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.8443104514533086,
+          "flower_score": 0.8443104514533086,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.8204523367788674,
+          "flower_score": 0.8204523367788674,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.7083333333333333,
+          "flower_score": 0.7083333333333333,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.6952358865624172,
+          "flower_score": 0.6952358865624172,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.6823593073593074,
+          "flower_score": 0.6823593073593074,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.5871212121212122,
+          "flower_score": 0.5871212121212122,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 32,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.05250705250704921,
+        "exposure_clipping": 0.0037285607755406414
+      },
+      "observations": {
+        "petalShape": {
+          "value": "broad",
+          "status": "region_candidate",
+          "reason": "Shape of separated outer regions; individual petal anatomy unverified",
+          "evidence": [
+            {
+              "view": "petalPreview",
+              "region": 1,
+              "shape": "broad"
+            },
+            {
+              "view": "petalPreview",
+              "region": 2,
+              "shape": "broad"
+            },
+            {
+              "view": "petalPreview",
+              "region": 3,
+              "shape": "broad"
+            }
+          ]
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": 3,
+          "status": "region_candidate",
+          "unit": "visible_outer_region",
+          "reason": "Numbered regions, not total anatomical petals",
+          "evidence": [
+            {
+              "view": "petalPreview",
+              "region": 1
+            },
+            {
+              "view": "petalPreview",
+              "region": 2
+            },
+            {
+              "view": "petalPreview",
+              "region": 3
+            }
+          ]
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/lantana-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/lantana-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "lantana-04",
+      "status": "not_run"
+    },
+    {
+      "id": "lantana-05",
+      "status": "not_run"
+    },
+    {
+      "id": "plumeria-01",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "plumeria",
+        "bidens"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "plumeria",
+          "bidens"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1756,
+      "candidates": [
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9915488684229314,
+          "flower_score": 0.9915488684229314,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9336051878027694,
+          "flower_score": 0.9336051878027694,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.844560334243121,
+          "flower_score": 0.844560334243121,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.769319473517055,
+          "flower_score": 0.769319473517055,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5391104271762409,
+          "flower_score": 0.5391104271762409,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5070003761970917,
+          "flower_score": 0.5070003761970917,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.3539975428787312,
+          "flower_score": 0.3539975428787312,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.09678196615977724,
+          "flower_score": 0.09678196615977724,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 6,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01153066970913292,
+        "exposure_clipping": 0.4976387876579203
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "none",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/plumeria-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/plumeria-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "plumeria-02",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "plumeria",
+        "bidens",
+        "daisy"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "plumeria",
+          "bidens",
+          "daisy"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1465,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9690968029482683,
+          "flower_score": 0.9690968029482683,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9476682315196968,
+          "flower_score": 0.9476682315196968,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.9145956716665744,
+          "flower_score": 0.9145956716665744,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.7311951338203184,
+          "flower_score": 0.7311951338203184,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.6769679141861138,
+          "flower_score": 0.6769679141861138,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.6457267282645058,
+          "flower_score": 0.6457267282645058,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.6288813859522887,
+          "flower_score": 0.6288813859522887,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 20,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01830259961365872,
+        "exposure_clipping": 0.0004450048208855596
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/plumeria-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/plumeria-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "plumeria-03",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "leaders": [
+        "hibiscus",
+        "ixora",
+        "bougainvillea",
+        "clover"
+      ],
+      "expectedScore": 0.9654127788973916,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "leaders": [
+          "hibiscus",
+          "ixora",
+          "bougainvillea",
+          "clover"
+        ],
+        "expectedScore": 0.9654127788973916
+      },
+      "milliseconds": 1288,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9654127788973916,
+          "flower_score": 0.9654127788973916,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.9654127788973916,
+          "flower_score": 0.9654127788973916,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9610030234690006,
+          "flower_score": 0.9610030234690006,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8333333333333333,
+          "flower_score": 0.8333333333333333,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.8116033442548534,
+          "flower_score": 0.8116033442548534,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.8063801558630083,
+          "flower_score": 0.8063801558630083,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7163652490167581,
+          "flower_score": 0.7163652490167581,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 19,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.04051388888886673,
+        "exposure_clipping": 0.12035084355828221
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/plumeria-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/plumeria-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "plumeria-04",
+      "status": "not_run"
+    },
+    {
+      "id": "plumeria-05",
+      "status": "not_run"
+    },
+    {
+      "id": "bougainvillea-01",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "plumeria",
+        "bougainvillea",
+        "waterlily"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "plumeria",
+          "bougainvillea",
+          "waterlily"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 675,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.9873487348734874,
+          "flower_score": 0.9873487348734874,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9815380706847817,
+          "flower_score": 0.9815380706847817,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9635392110639636,
+          "flower_score": 0.9635392110639636,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9601094992562103,
+          "flower_score": 0.9601094992562103,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.9528538658900786,
+          "flower_score": 0.9528538658900786,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8949152012938052,
+          "flower_score": 0.8949152012938052,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.8018767424102659,
+          "flower_score": 0.8018767424102659,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.7475483262611975,
+          "flower_score": 0.7475483262611975,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 46,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.024982213778642865,
+        "exposure_clipping": 0.0018973214285714286
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bougainvillea-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bougainvillea-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "bougainvillea-02",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "bougainvillea",
+        "clover"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "bougainvillea",
+          "clover"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 869,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9928576600033029,
+          "flower_score": 0.9928576600033029,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9714290885747314,
+          "flower_score": 0.9714290885747314,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.9502433135916104,
+          "flower_score": 0.9502433135916104,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9442030647139168,
+          "flower_score": 0.9442030647139168,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.9442030647139168,
+          "flower_score": 0.9442030647139168,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8261909933366361,
+          "flower_score": 0.8261909933366361,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.8014933052297011,
+          "flower_score": 0.8014933052297011,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7062552099916058,
+          "flower_score": 0.7062552099916058,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 95,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.026178026682472776,
+        "exposure_clipping": 0.05286189862542955
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bougainvillea-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bougainvillea-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "bougainvillea-03",
+      "status": "unresolved",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "reason": "No usable flower evidence",
+      "leaders": [],
+      "flowerOnly": {
+        "status": "unresolved",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "reason": "No usable flower evidence",
+        "leaders": []
+      },
+      "milliseconds": 368,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": false,
+        "issues": [
+          "Multiple similarly prominent regions"
+        ],
+        "proposal_count": 40,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.0338123562432903,
+        "exposure_clipping": 0.013319227430555556
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region too small or unreliable",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region too small or unreliable",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bougainvillea-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bougainvillea-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "bougainvillea-04",
+      "status": "not_run"
+    },
+    {
+      "id": "bougainvillea-05",
+      "status": "not_run"
+    },
+    {
+      "id": "bidens-01",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "plumeria",
+        "bidens",
+        "daisy"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "plumeria",
+          "bidens",
+          "daisy"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 933,
+      "candidates": [
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.9725063815595376,
+          "flower_score": 0.9725063815595376,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.9577306332369013,
+          "flower_score": 0.9577306332369013,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.86674717634846,
+          "flower_score": 0.86674717634846,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8531983757092929,
+          "flower_score": 0.8531983757092929,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.8436073768201434,
+          "flower_score": 0.8436073768201434,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.806038878312862,
+          "flower_score": 0.806038878312862,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.6863020618083299,
+          "flower_score": 0.6863020618083299,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.679147229308097,
+          "flower_score": 0.679147229308097,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.6487335633010485,
+          "flower_score": 0.6487335633010485,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 37,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.0056272084664794235,
+        "exposure_clipping": 0
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bidens-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bidens-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "bidens-02",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "plumeria",
+        "bidens",
+        "waterlily"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "plumeria",
+          "bidens",
+          "waterlily"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1391,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9792914341776147,
+          "flower_score": 0.9792914341776147,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.952727460289811,
+          "flower_score": 0.952727460289811,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9312988888612396,
+          "flower_score": 0.9312988888612396,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.9248109472298168,
+          "flower_score": 0.9248109472298168,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.877068267095874,
+          "flower_score": 0.877068267095874,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.6675861246189049,
+          "flower_score": 0.6675861246189049,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.6617298184307169,
+          "flower_score": 0.6617298184307169,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.6313597623373421,
+          "flower_score": 0.6313597623373421,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.10156036384184908,
+          "flower_score": 0.10156036384184908,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 33,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.012891360489649511,
+        "exposure_clipping": 0.01715313946759259
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bidens-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bidens-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "bidens-03",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "hibiscus",
+        "plumeria",
+        "bidens"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "hibiscus",
+          "plumeria",
+          "bidens"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 681,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9986690725739369,
+          "flower_score": 0.9986690725739369,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9855650346247531,
+          "flower_score": 0.9855650346247531,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9641364631961817,
+          "flower_score": 0.9641364631961817,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.8422384701912261,
+          "flower_score": 0.8422384701912261,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.7401790489472727,
+          "flower_score": 0.7401790489472727,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.6451683268298108,
+          "flower_score": 0.6451683268298108,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5565241844769404,
+          "flower_score": 0.5565241844769404,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.4456606476731221,
+          "flower_score": 0.4456606476731221,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.07542135370676084,
+          "flower_score": 0.07542135370676084,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 9,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01926975201845268,
+        "exposure_clipping": 0
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bidens-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/bidens-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "bidens-04",
+      "status": "not_run"
+    },
+    {
+      "id": "bidens-05",
+      "status": "not_run"
+    },
+    {
+      "id": "waterlily-01",
+      "status": "wrong",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "dandelion"
+      ],
+      "expectedScore": 0.9881172813993089,
+      "flowerOnly": {
+        "status": "wrong",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "dandelion"
+        ],
+        "expectedScore": 0.9881172813993089
+      },
+      "milliseconds": 1666,
+      "candidates": [
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.9969045859213502,
+          "flower_score": 0.9969045859213502,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.9881172813993089,
+          "flower_score": 0.9881172813993089,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.9494747379983468,
+          "flower_score": 0.9494747379983468,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.9300679018664483,
+          "flower_score": 0.9300679018664483,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.8837447908795397,
+          "flower_score": 0.8837447908795397,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.8690696623516899,
+          "flower_score": 0.8690696623516899,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.7381172813993089,
+          "flower_score": 0.7381172813993089,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.7296906139489594,
+          "flower_score": 0.7296906139489594,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.48261887163563594,
+          "flower_score": 0.48261887163563594,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.25,
+          "flower_score": 0.25,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 34,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01953574929971089,
+        "exposure_clipping": 0.07076210826210826
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/waterlily-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/waterlily-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "waterlily-02",
+      "status": "tied",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "plumeria",
+        "bidens",
+        "waterlily"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "plumeria",
+          "bidens",
+          "waterlily"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1157,
+      "candidates": [
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9826987446792849,
+          "flower_score": 0.9826987446792849,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9655743871927344,
+          "flower_score": 0.9655743871927344,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9076952383128907,
+          "flower_score": 0.9076952383128907,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8239609755131033,
+          "flower_score": 0.8239609755131033,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.8206922796915848,
+          "flower_score": 0.8206922796915848,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.4798601014784487,
+          "flower_score": 0.4798601014784487,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.12333233739071692,
+          "flower_score": 0.12333233739071692,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 48,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.017809544623216766,
+        "exposure_clipping": 0.0030521953405017923
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/waterlily-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/waterlily-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "waterlily-03",
+      "status": "wrong",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "leaders": [
+        "plumeria"
+      ],
+      "expectedScore": 0.875,
+      "flowerOnly": {
+        "status": "wrong",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "leaders": [
+          "plumeria"
+        ],
+        "expectedScore": 0.875
+      },
+      "milliseconds": 1209,
+      "candidates": [
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9940653859994439,
+          "flower_score": 0.9940653859994439,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.9757763369909829,
+          "flower_score": 0.9757763369909829,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.9658649054590884,
+          "flower_score": 0.9658649054590884,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9519668131814591,
+          "flower_score": 0.9519668131814591,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.8952870918906147,
+          "flower_score": 0.8952870918906147,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.7797931344625993,
+          "flower_score": 0.7797931344625993,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.37528074509748877,
+          "flower_score": 0.37528074509748877,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.21552813188419412,
+          "flower_score": 0.21552813188419412,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 39,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.030099068390948808,
+        "exposure_clipping": 0.008852023319615912
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/waterlily-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/waterlily-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "waterlily-04",
+      "status": "not_run"
+    },
+    {
+      "id": "waterlily-05",
+      "status": "not_run"
+    },
+    {
+      "id": "dandelion-01",
+      "status": "wrong",
+      "top1": false,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "sunflower"
+      ],
+      "expectedScore": 0.875,
+      "flowerOnly": {
+        "status": "wrong",
+        "top1": false,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "sunflower"
+        ],
+        "expectedScore": 0.875
+      },
+      "milliseconds": 894,
+      "candidates": [
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.875,
+          "flower_score": 0.875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.78783606387094,
+          "flower_score": 0.78783606387094,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7738095238095237,
+          "flower_score": 0.7738095238095237,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.7467187826661089,
+          "flower_score": 0.7467187826661089,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7023809523809523,
+          "flower_score": 0.7023809523809523,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.6991513233601842,
+          "flower_score": 0.6991513233601842,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.6987013645634548,
+          "flower_score": 0.6987013645634548,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.6875,
+          "flower_score": 0.6875,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.5089285714285714,
+          "flower_score": 0.5089285714285714,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.4375,
+          "flower_score": 0.4375,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.4375,
+          "flower_score": 0.4375,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.40625,
+          "flower_score": 0.40625,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 3,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01654318124116083,
+        "exposure_clipping": 0.6678996598639456
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region boundaries are unstable",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region boundaries are unstable",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": "contrasting_centre_with_surrounding_yellow_region",
+          "status": "region_candidate",
+          "reason": "Disc/ray region hypothesis; does not resolve a column or cluster of stamens",
+          "evidence": [
+            {
+              "view": "centreMaskPreview"
+            },
+            {
+              "view": "rayMaskPreview"
+            }
+          ]
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/dandelion-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/dandelion-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "dandelion-02",
+      "status": "correct",
+      "top1": true,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "dandelion"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "correct",
+        "top1": true,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "dandelion"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1402,
+      "candidates": [
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.8214285714285714,
+          "flower_score": 0.8214285714285714,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7738095238095237,
+          "flower_score": 0.7738095238095237,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.7548579411748311,
+          "flower_score": 0.7548579411748311,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.7298180341119228,
+          "flower_score": 0.7298180341119228,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.718360225104739,
+          "flower_score": 0.718360225104739,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7023809523809523,
+          "flower_score": 0.7023809523809523,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.5714285714285714,
+          "flower_score": 0.5714285714285714,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.25,
+          "flower_score": 0.25,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 3,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.019827998778549356,
+        "exposure_clipping": 0
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "none",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/dandelion-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/dandelion-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "dandelion-03",
+      "status": "correct",
+      "top1": true,
+      "top3": true,
+      "top3TieInclusive": true,
+      "leaders": [
+        "dandelion"
+      ],
+      "expectedScore": 1,
+      "flowerOnly": {
+        "status": "correct",
+        "top1": true,
+        "top3": true,
+        "top3TieInclusive": true,
+        "leaders": [
+          "dandelion"
+        ],
+        "expectedScore": 1
+      },
+      "milliseconds": 1482,
+      "candidates": [
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.8214285714285714,
+          "flower_score": 0.8214285714285714,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7738095238095237,
+          "flower_score": 0.7738095238095237,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.7462051401809953,
+          "flower_score": 0.7462051401809953,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.720819804806947,
+          "flower_score": 0.720819804806947,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.7175763148879393,
+          "flower_score": 0.7175763148879393,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.7023809523809523,
+          "flower_score": 0.7023809523809523,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.5714285714285714,
+          "flower_score": 0.5714285714285714,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.25,
+          "flower_score": 0.25,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 1,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.014775060355211993,
+        "exposure_clipping": 0.024604885057471264
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Outer regions merge or change count across three centre exclusions",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/dandelion-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/dandelion-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "dandelion-04",
+      "status": "not_run"
+    },
+    {
+      "id": "dandelion-05",
+      "status": "not_run"
+    },
+    {
+      "id": "daisy-01",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "leaders": [
+        "hibiscus",
+        "ixora",
+        "poppy"
+      ],
+      "expectedScore": 0.6904761904761905,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "leaders": [
+          "hibiscus",
+          "ixora",
+          "poppy"
+        ],
+        "expectedScore": 0.6904761904761905
+      },
+      "milliseconds": 340,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.9222129397567994,
+          "flower_score": 0.9222129397567994,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8333333333333333,
+          "flower_score": 0.8333333333333333,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "mature_seed_head"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.8256056808688388,
+          "flower_score": 0.8256056808688388,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.7857142857142857,
+          "flower_score": 0.7857142857142857,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.7541771094402674,
+          "flower_score": 0.7541771094402674,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.75,
+          "flower_score": 0.75,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0.7474771868463049,
+          "flower_score": 0.7474771868463049,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0.7165838072965249,
+          "flower_score": 0.7165838072965249,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.6904761904761905,
+          "flower_score": 0.6904761904761905,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 11,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.026770599642570298,
+        "exposure_clipping": 0
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/daisy-01-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/daisy-01-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "daisy-02",
+      "status": "tied",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "leaders": [
+        "plumeria",
+        "waterlily"
+      ],
+      "expectedScore": 0.9691097633754827,
+      "flowerOnly": {
+        "status": "tied",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "leaders": [
+          "plumeria",
+          "waterlily"
+        ],
+        "expectedScore": 0.9691097633754827
+      },
+      "milliseconds": 1612,
+      "candidates": [
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 1,
+          "flower_score": 1,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0.9929192871850064,
+          "flower_score": 0.9929192871850064,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0.977439108635739,
+          "flower_score": 0.977439108635739,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0.9691097633754827,
+          "flower_score": 0.9691097633754827,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0.9560105372071676,
+          "flower_score": 0.9560105372071676,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0.955037451118444,
+          "flower_score": 0.955037451118444,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0.8282139416150535,
+          "flower_score": 0.8282139416150535,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0.7764660225470154,
+          "flower_score": 0.7764660225470154,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0.5050374511184439,
+          "flower_score": 0.5050374511184439,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0.5,
+          "flower_score": 0.5,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0.49676227403989714,
+          "flower_score": 0.49676227403989714,
+          "leaf_adjustment": 0,
+          "coverage": 1,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0.16409928130212342,
+          "flower_score": 0.16409928130212342,
+          "leaf_adjustment": 0,
+          "coverage": 0.25,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 34,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.01976924200923898,
+        "exposure_clipping": 0.005893283420138889
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Flower boundary is clipped",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/daisy-02-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/daisy-02-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "daisy-03",
+      "status": "unresolved",
+      "top1": false,
+      "top3": false,
+      "top3TieInclusive": false,
+      "reason": "No usable flower evidence",
+      "leaders": [],
+      "flowerOnly": {
+        "status": "unresolved",
+        "top1": false,
+        "top3": false,
+        "top3TieInclusive": false,
+        "reason": "No usable flower evidence",
+        "leaders": []
+      },
+      "milliseconds": 515,
+      "candidates": [
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus / 朱槿",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "ixora",
+          "name": "Ixora / 龍船花",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "lantana",
+          "name": "Lantana / 馬纓丹",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "plumeria",
+          "name": "Frangipani / 雞蛋花",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bougainvillea",
+          "name": "Bougainvillea / 簕杜鵑",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bidens",
+          "name": "Beggarticks / 鬼針草",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "waterlily",
+          "name": "Water lily",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "dandelion",
+          "name": "Dandelion",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "daisy",
+          "name": "Common daisy",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "poppy",
+          "name": "Poppy",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "clover",
+          "name": "Clover",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [],
+          "stage": "flowering"
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower / 向日葵",
+          "score": 0,
+          "flower_score": 0,
+          "leaf_adjustment": 0,
+          "coverage": 0,
+          "missing_required": [
+            "ray_enclosure",
+            "disc_contrast"
+          ],
+          "stage": "flowering"
+        }
+      ],
+      "quality": {
+        "usable": false,
+        "issues": [
+          "Multiple similarly prominent regions"
+        ],
+        "proposal_count": 25,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.027477633879478585,
+        "exposure_clipping": 0.012129134241245136
+      },
+      "observations": {
+        "petalShape": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region too small or unreliable",
+          "evidence": []
+        },
+        "petalTip": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Complete individual petal tips are not yet traced",
+          "evidence": []
+        },
+        "visibleCount": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Region too small or unreliable",
+          "evidence": []
+        },
+        "arrangement": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Overlapping petal layers are not yet measured",
+          "evidence": []
+        },
+        "centre": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Central column and stamen cluster are not yet resolved",
+          "evidence": []
+        },
+        "leafSupport": {
+          "value": null,
+          "status": "unresolved",
+          "reason": "Green pixels are not verified leaf blades or attachments",
+          "evidence": []
+        }
+      },
+      "leafObservations": {
+        "shape": null,
+        "endShape": null,
+        "tip": null,
+        "base": null,
+        "margin": null,
+        "arrangement": null,
+        "reason": "No sufficiently complete isolated green blade"
+      },
+      "leafAvailable": false,
+      "leafPreview": "candidate",
+      "flowerMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/daisy-03-flower.jpg",
+      "leafMask": "/benchmark/runs/2026-09-15T13-29-33-292Z/daisy-03-leaf.jpg",
+      "maskReview": "unreviewed",
+      "engineVersion": "0.15.0"
+    },
+    {
+      "id": "daisy-04",
+      "status": "not_run"
+    },
+    {
+      "id": "daisy-05",
+      "status": "not_run"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+#imageViews{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+#imageViews figure{min-height:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+#imageViews figure:nth-child(2n){border-right:0}
+#imageViews figure:nth-child(n+3){border-bottom:0}
+#preview,#maskPreview,#centreMaskPreview,#rayMaskPreview{width:100%;height:100%;display:block;object-fit:contain}
+#maskPreview,#centreMaskPreview,#rayMaskPreview{background:#111}
+.candidates{overflow:auto}.candidates .panel-head{position:sticky;top:0;background:#fff;z-index:1;min-width:650px}.candidates table{min-width:650px}
+.summary{overflow:auto}.feature-label{flex-wrap:wrap;font-size:12px}.feature-group h3{font-size:12px}.feature-groups{grid-template-columns:repeat(5,minmax(95px,1fr))}
+
+#imageViews{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr 1fr}#petalPreview{width:100%;height:100%;object-fit:contain;display:block}#imageViews figure:last-child{grid-column:span 2}
+
+#imageViews figure:last-child{grid-column:auto}#edgePreview{width:100%;height:100%;object-fit:contain;display:block}
+
+.feature-groups{grid-template-columns:repeat(5,minmax(120px,1fr));align-content:start;overflow:auto}.botanical-card p{font-size:14px;line-height:1.45;margin:12px 0}.botanical-card h3{font-size:14px}.botanical-card small{font-size:12px;line-height:1.4;display:inline-block;color:var(--muted)}.observation-value{font-size:16px}.evidence-note{margin-top:6px}.feature-diagnostics{grid-column:1/-1;border-top:1px solid var(--line);padding:12px}.feature-diagnostics summary{font-size:14px;cursor:pointer}.diagnostic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:12px}@media(max-width:750px){.feature-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}

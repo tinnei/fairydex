@@ -1,0 +1,42 @@
+[
+  {
+    "id": "hibiscus",
+    "file": "hibiscus.jpg",
+    "taxon": "Hibiscus rosa-sinensis",
+    "title": "File:Hibiscus flower @ Ramanthali IMG 20210108 161837.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hibiscus_flower_@_Ramanthali_IMG_20210108_161837.jpg",
+    "author": "Sindhu Haridas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Hibiscus",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Hibiscus_flower_%40_Ramanthali_IMG_20210108_161837.jpg/1280px-Hibiscus_flower_%40_Ramanthali_IMG_20210108_161837.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "modifications": "Wikimedia thumbnail, no local edits. Slide displays image at reduced size."
+  },
+  {
+    "id": "sunflower",
+    "file": "sunflower.jpg",
+    "taxon": "Helianthus annuus",
+    "title": "File:Helianthus annuus - Jardin universitaire Roger-Van den Hende, Quebec 22.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Helianthus_annuus_-_Jardin_universitaire_Roger-Van_den_Hende,_Quebec_22.jpg",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Sunflower (Helianthus annuus) is a large annual forb of the genus Helianthus grown as a crop for its edible oil and seeds. This sunflower species is also used as wild bird food, as livestock forage (as a meal or a silage plant), in some industrial applications, and as an ornamental in domestic gardens. Jardin botanique Roger-Van den Hende, is a 6-hectare botanical garden managed by Laval University in Quebec, Canada.",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Helianthus_annuus_-_Jardin_universitaire_Roger-Van_den_Hende%2C_Quebec_22.jpg/1280px-Helianthus_annuus_-_Jardin_universitaire_Roger-Van_den_Hende%2C_Quebec_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "modifications": "Wikimedia thumbnail, no local edits. Slide displays image at reduced size."
+  },
+  {
+    "file": "waterlily.jpg",
+    "expectedLabel": "water-lily",
+    "commonsTitle": "File:American White Waterlily Nymphaea Odorata Moraine Hills State Park Illinois 2024-0133.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:American_White_Waterlily_Nymphaea_Odorata_Moraine_Hills_State_Park_Illinois_2024-0133.jpg",
+    "author": "Prburley",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/American_White_Waterlily_Nymphaea_Odorata_Moraine_Hills_State_Park_Illinois_2024-0133.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "id": "waterlily",
+    "title": "File:American White Waterlily Nymphaea Odorata Moraine Hills State Park Illinois 2024-0133.jpg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/American_White_Waterlily_Nymphaea_Odorata_Moraine_Hills_State_Park_Illinois_2024-0133.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modifications": "Existing Wikimedia sample, displayed at reduced size in slide."
+  }
+]

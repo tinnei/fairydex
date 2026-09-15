@@ -1,0 +1,435 @@
+[
+  {
+    "name": "user-sunflower",
+    "selected": null,
+    "observations": {
+      "shape": null,
+      "endShape": null,
+      "tip": null,
+      "base": null,
+      "margin": null,
+      "arrangement": null,
+      "reason": "No sufficiently complete isolated green blade"
+    },
+    "candidates": [
+      {
+        "id": 1,
+        "area": 3897,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 2,
+        "area": 2284,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 3,
+        "area": 241,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      }
+    ],
+    "rank": [
+      {
+        "id": "sunflower",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "hibiscus",
+        "score": 0.9375,
+        "flower_score": 0.9375,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "lantana",
+        "score": 0.9375,
+        "flower_score": 0.9375,
+        "leaf_adjustment": 0
+      }
+    ]
+  },
+  {
+    "name": "sunflower",
+    "selected": null,
+    "observations": {
+      "shape": null,
+      "endShape": null,
+      "tip": null,
+      "base": null,
+      "margin": null,
+      "arrangement": null,
+      "reason": "No sufficiently complete isolated green blade"
+    },
+    "candidates": [
+      {
+        "id": 1,
+        "area": 2688,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 2,
+        "area": 1592,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge"
+        ]
+      },
+      {
+        "id": 3,
+        "area": 1408,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge"
+        ]
+      },
+      {
+        "id": 4,
+        "area": 1031,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 5,
+        "area": 790,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 6,
+        "area": 793,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 7,
+        "area": 623,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge"
+        ]
+      },
+      {
+        "id": 8,
+        "area": 573,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 9,
+        "area": 523,
+        "quality": 0,
+        "issues": [
+          "Weak boundary; colour mask may cut through a shaded or overlapping blade"
+        ]
+      },
+      {
+        "id": 10,
+        "area": 488,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge"
+        ]
+      },
+      {
+        "id": 11,
+        "area": 441,
+        "quality": 0,
+        "issues": [
+          "Weak boundary; colour mask may cut through a shaded or overlapping blade"
+        ]
+      },
+      {
+        "id": 12,
+        "area": 364,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      }
+    ],
+    "rank": [
+      {
+        "id": "sunflower",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "hibiscus",
+        "score": 0.9375,
+        "flower_score": 0.9375,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "ixora",
+        "score": 0.9375,
+        "flower_score": 0.9375,
+        "leaf_adjustment": 0
+      }
+    ]
+  },
+  {
+    "name": "hibiscus",
+    "selected": null,
+    "observations": {
+      "shape": null,
+      "endShape": null,
+      "tip": null,
+      "base": null,
+      "margin": null,
+      "arrangement": null,
+      "reason": "No sufficiently complete isolated green blade"
+    },
+    "candidates": [
+      {
+        "id": 1,
+        "area": 5207,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 2,
+        "area": 4658,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge"
+        ]
+      },
+      {
+        "id": 3,
+        "area": 3766,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 4,
+        "area": 2946,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 5,
+        "area": 1811,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 6,
+        "area": 1559,
+        "quality": 0,
+        "issues": [
+          "Weak boundary; colour mask may cut through a shaded or overlapping blade"
+        ]
+      },
+      {
+        "id": 7,
+        "area": 1489,
+        "quality": 0,
+        "issues": [
+          "Weak boundary; colour mask may cut through a shaded or overlapping blade"
+        ]
+      },
+      {
+        "id": 8,
+        "area": 1434,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 9,
+        "area": 839,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 10,
+        "area": 746,
+        "quality": 0,
+        "issues": [
+          "Weak boundary; colour mask may cut through a shaded or overlapping blade"
+        ]
+      },
+      {
+        "id": 11,
+        "area": 691,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 12,
+        "area": 515,
+        "quality": 0,
+        "issues": [
+          "Weak boundary; colour mask may cut through a shaded or overlapping blade"
+        ]
+      }
+    ],
+    "rank": [
+      {
+        "id": "plumeria",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "bougainvillea",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "bidens",
+        "score": 0.9942418002352252,
+        "flower_score": 0.9942418002352252,
+        "leaf_adjustment": 0
+      }
+    ]
+  },
+  {
+    "name": "waterlily",
+    "selected": null,
+    "observations": {
+      "shape": null,
+      "endShape": null,
+      "tip": null,
+      "base": null,
+      "margin": null,
+      "arrangement": null,
+      "reason": "No sufficiently complete isolated green blade"
+    },
+    "candidates": [
+      {
+        "id": 1,
+        "area": 19207,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 2,
+        "area": 12859,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 3,
+        "area": 7147,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge"
+        ]
+      },
+      {
+        "id": 4,
+        "area": 3129,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 5,
+        "area": 3061,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 6,
+        "area": 630,
+        "quality": 0,
+        "issues": [
+          "Boundary reaches photo edge",
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 7,
+        "area": 492,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      },
+      {
+        "id": 8,
+        "area": 309,
+        "quality": 0,
+        "issues": [
+          "Irregular or merged region; single blade unresolved"
+        ]
+      }
+    ],
+    "rank": [
+      {
+        "id": "plumeria",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "bidens",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      },
+      {
+        "id": "waterlily",
+        "score": 1,
+        "flower_score": 1,
+        "leaf_adjustment": 0
+      }
+    ]
+  }
+]

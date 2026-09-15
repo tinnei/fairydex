@@ -1,0 +1,2 @@
+.image-panel .image-box{height:calc(100% - 34px)}.source-view{cursor:default}
+@media(max-width:1050px),(max-height:680px){.image-panel .image-box{height:320px}}

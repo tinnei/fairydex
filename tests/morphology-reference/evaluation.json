@@ -1,0 +1,245 @@
+[
+  {
+    "name": "hibiscus",
+    "engine": "0.14.0",
+    "image": {
+      "original": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 1705
+      },
+      "crop": {
+        "x": 0,
+        "y": 50.43958333333333,
+        "width": 1280,
+        "height": 1497.5583333333332
+      },
+      "detailWidth": 328,
+      "detailHeight": 384,
+      "coarseQuality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 8,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.04318967388819537,
+        "exposure_clipping": 0.027922453703703703
+      }
+    },
+    "quality": {
+      "usable": true,
+      "issues": [],
+      "proposal_count": 23,
+      "seeded": false,
+      "seed_contained": null,
+      "focus_score": 0.024648436719223087,
+      "exposure_clipping": 0.016942962398373982
+    },
+    "proposals": [
+      {
+        "name": "closed_edges",
+        "count": 4,
+        "countRange": [
+          2,
+          6
+        ]
+      },
+      {
+        "name": "closed_edges_fine",
+        "count": 6,
+        "countRange": [
+          2,
+          6
+        ]
+      },
+      {
+        "name": "closed_edges_coarse",
+        "count": 2
+      },
+      {
+        "name": "seeded_gradient_flood",
+        "count": 3,
+        "seedCount": 3
+      }
+    ],
+    "supportedRegionCount": null,
+    "topCandidates": [
+      {
+        "id": "plumeria",
+        "score": 1
+      },
+      {
+        "id": "bougainvillea",
+        "score": 1
+      },
+      {
+        "id": "bidens",
+        "score": 0.9942418002352252
+      }
+    ],
+    "accepted": false
+  },
+  {
+    "name": "sunflower",
+    "engine": "0.14.0",
+    "image": {
+      "original": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 952
+      },
+      "crop": {
+        "x": 55.999999999999986,
+        "y": 0,
+        "width": 1174.6666666666665,
+        "height": 952
+      },
+      "detailWidth": 384,
+      "detailHeight": 311,
+      "coarseQuality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 13,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.04542489642581272,
+        "exposure_clipping": 0.053066724941724944
+      }
+    },
+    "quality": {
+      "usable": true,
+      "issues": [],
+      "proposal_count": 53,
+      "seeded": false,
+      "seed_contained": null,
+      "focus_score": 0.03377178665240304,
+      "exposure_clipping": 0.05646268756698821
+    },
+    "proposals": [
+      {
+        "name": "closed_edges",
+        "count": 8,
+        "countRange": [
+          5,
+          9
+        ]
+      },
+      {
+        "name": "closed_edges_fine",
+        "count": 9,
+        "countRange": [
+          5,
+          9
+        ]
+      },
+      {
+        "name": "closed_edges_coarse",
+        "count": 5
+      },
+      {
+        "name": "seeded_gradient_flood",
+        "count": 7,
+        "seedCount": 7
+      }
+    ],
+    "supportedRegionCount": null,
+    "topCandidates": [
+      {
+        "id": "sunflower",
+        "score": 1
+      },
+      {
+        "id": "hibiscus",
+        "score": 0.9375
+      },
+      {
+        "id": "ixora",
+        "score": 0.9375
+      }
+    ],
+    "accepted": false
+  },
+  {
+    "name": "waterlily",
+    "engine": "0.14.0",
+    "image": {
+      "original": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 853
+      },
+      "crop": {
+        "x": 55.46666666666667,
+        "y": 0,
+        "width": 1089.0666666666668,
+        "height": 853
+      },
+      "detailWidth": 384,
+      "detailHeight": 301,
+      "coarseQuality": {
+        "usable": true,
+        "issues": [],
+        "proposal_count": 13,
+        "seeded": false,
+        "seed_contained": null,
+        "focus_score": 0.040078662354989664,
+        "exposure_clipping": 0.011311848958333334
+      }
+    },
+    "quality": {
+      "usable": true,
+      "issues": [],
+      "proposal_count": 44,
+      "seeded": false,
+      "seed_contained": null,
+      "focus_score": 0.025082316611131816,
+      "exposure_clipping": 0.014136904761904762
+    },
+    "proposals": [
+      {
+        "name": "closed_edges",
+        "count": 11,
+        "countRange": [
+          7,
+          14
+        ]
+      },
+      {
+        "name": "closed_edges_fine",
+        "count": 14,
+        "countRange": [
+          7,
+          14
+        ]
+      },
+      {
+        "name": "closed_edges_coarse",
+        "count": 7
+      },
+      {
+        "name": "seeded_gradient_flood",
+        "count": 10,
+        "seedCount": 10
+      }
+    ],
+    "supportedRegionCount": null,
+    "topCandidates": [
+      {
+        "id": "plumeria",
+        "score": 1
+      },
+      {
+        "id": "bidens",
+        "score": 1
+      },
+      {
+        "id": "waterlily",
+        "score": 1
+      }
+    ],
+    "accepted": false
+  }
+]

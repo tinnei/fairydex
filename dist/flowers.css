@@ -1,0 +1,16 @@
+.catalogue{overflow:auto;font-size:16px}
+.catalogue header{min-height:48px;height:auto;gap:16px;padding:12px 20px;font-size:14px}
+.catalogue main{display:block;height:auto;max-width:1120px;margin:0 auto;padding:36px 24px}
+.catalogue-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.catalogue h1{font:600 30px/1.2 Arial,sans-serif;letter-spacing:-.03em;margin:0}
+#catalogueCount{font-size:14px;color:var(--muted)}
+.catalogue-note{max-width:850px;line-height:1.6;color:var(--muted);margin:16px 0 28px}
+.catalogue-table{background:#fff;border:1px solid var(--line);overflow-x:auto}
+.catalogue th{font-size:14px;padding:14px 16px;background:#fafafa}
+.catalogue td{font-size:16px;padding:15px 16px;line-height:1.45;vertical-align:top}
+.catalogue td:first-child{font-weight:600}.catalogue td:nth-child(2){font-style:italic}
+.catalogue tr:last-child td{border-bottom:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.catalogue main{padding:24px 12px}.catalogue h1{font-size:26px}.catalogue th,.catalogue td{padding:12px}.catalogue table{min-width:650px}}
+
+.expansion{margin-top:40px}.expansion h2{font:600 24px/1.25 Arial,sans-serif;margin:0}.expansion .catalogue-heading span{font-size:14px;color:var(--muted)}.catalogue-table a{color:inherit;text-underline-offset:3px}
