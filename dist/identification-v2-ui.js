@@ -1,0 +1,22 @@
+const identificationV2BaseAnalyze=analyze;
+analyze=function(img){const out=identificationV2BaseAnalyze(img);out.identification_v2=IdentificationV2.build(out);return out;};
+render=function(out){
+ lastOutput=out;const pipeline=out.identification_v2,esc=value=>String(value??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;'),human=value=>String(value??'unresolved').replaceAll('_',' '),triage=pipeline.triage;
+ const triageRows=[['Framing / scale',triage.framing],['Flower candidates',triage.flower_multiplicity],['Head / crown grouping',triage.head_grouping],['Leaf visibility',triage.leaf_visibility]];
+ $('triageCards').innerHTML=triageRows.map(([title,item])=>`<section class="triage-card ${item?.status==='needs_extra_handling'?'attention':''}"><h3>${esc(title)}</h3><strong>${esc(human(item?.value))}</strong><p>${esc(item?.reason||'Unresolved')}</p></section>`).join('');
+ const gate=pipeline.primary.gate,predicates=Object.entries(gate.predicates),families=Object.entries(pipeline.primary.evidence_families);
+ $('featureRows').innerHTML=`<div class="gate-summary"><strong>${gate.passed?'PRIMARY COMPLETE':'MORE EVIDENCE NEEDED'}</strong><span>${pipeline.primary.candidates[0]?.pipeline_score.toFixed(3)||'—'} · lead ${pipeline.primary.lead.toFixed(3)}</span></div><div class="predicate-list">${predicates.map(([name,pass])=>`<div class="predicate ${pass?'pass':'fail'}"><b>${pass?'✓':'×'}</b><span>${esc(human(name))}</span></div>`).join('')}</div><div class="family-strip">${families.map(([name,status])=>`<span>${esc(human(name))}: ${esc(human(status))}</span>`).join('')}</div>`;
+ $('secondaryStatus').textContent=pipeline.secondary.ran?'RAN · BOUNDED RERANK':'SKIPPED';
+ $('secondaryRoute').textContent=pipeline.secondary.reason;
+ $('leafEvidence').textContent=pipeline.secondary.available?'Visible blade candidate':'No reliable blade';
+ const changed=pipeline.secondary.changes.filter(change=>Math.abs(change.adjustment)>.00001||change.before_rank!==change.after_rank);
+ $('rankChanges').textContent=changed.length?`${changed.length} candidate${changed.length===1?'':'s'} changed`:'None';
+ const final=pipeline.final,top=final.candidates[0],identified=final.outcome==='identified';
+ $('prediction').textContent=identified?final.candidate_name:final.outcome==='no_match'?'NO SUPPORTED MATCH':'AMBIGUOUS';
+ $('latin').textContent=identified?(top?.latin||'—'):'Review required · no automatic acceptance';
+ $('decision').textContent=human(final.outcome).toUpperCase();$('plantPart').textContent=human(final.internal_state);$('growthStage').textContent=identified?human(top?.stage):'Unresolved';$('topScore').textContent=top?.pipeline_score.toFixed(3)||'—';$('leadScore').textContent=final.lead.toFixed(3);$('decisionLog').textContent=final.reason;$('followUp').textContent='Next evidence: '+final.follow_up;
+ $('runStatus').textContent=final.outcome==='identified'?'EXPERIMENTAL ID':final.outcome==='no_match'?'NO MATCH':'REVIEW REQUIRED';$('runStatus').className='status '+(final.outcome==='identified'?'pass':final.internal_state==='not_assessable'?'reject':'idle');
+ const changes=new Map(pipeline.secondary.changes.map(change=>[change.id,change]));
+ $('candidateRows').innerHTML=final.candidates.map(row=>{const change=changes.get(row.id),delta=change?.adjustment||0;return `<tr><td>${row.pipeline_rank}</td><td>${esc(row.name)}<br><small>${esc(row.stage)} · ${esc(row.taxonRank)}</small></td><td>${change?.before_score.toFixed(3)||row.pipeline_score.toFixed(3)}</td><td>${row.pipeline_score.toFixed(3)}</td><td class="${delta<0?'delta-negative':delta>0?'delta-positive':''}">${delta>=0?'+':''}${delta.toFixed(3)}</td><td>${Math.round((row.coverage||0)*100)}%</td></tr>`}).join('');
+ $('rawOutput').textContent=JSON.stringify(pipeline,null,2);$('copyButton').disabled=false;
+};
