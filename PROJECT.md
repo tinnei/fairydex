@@ -1,6 +1,6 @@
 # Flower Lens — project memory
 
-Last updated: 2026-09-16. Current milestone: visible floral structure pilot; image engine remains 0.15.
+Last updated: 2026-09-16. Current milestone: evidence trace and profile audit; image engine remains 0.15.
 
 ## Read first
 
@@ -248,3 +248,14 @@ On the predeclared 16-image development pilot, the observer agreed with 11/12 po
 The uploaded lotus-like screenshot crop returned `single_large_flower_candidate` in an ad hoc regression check. Its source is unknown and it is not accuracy evidence. Thresholds and rules were tuned on this development pilot, so these results are development evidence rather than validation. The 20 reserved benchmark images remain untouched.
 
 Next: freeze the observer, annotation schema and acceptance metrics, then evaluate a larger independent set covering viewpoints, scale, occlusion, double forms, bract-dominant displays, all-ray heads and distractors before connecting structure to ranking or making recognition claims.
+
+
+## 2026-09-16 — evidence trace and profile audit (0.18)
+
+The Identification Test v2 interface now traces image measurements into one visible crop-level observation, compares that observation with the top candidate expectations, and then shows the decision gate. The result panel separates exact ties from a single leading hypothesis and reports deterministic ambiguity causes: input not assessable, missing measurement, missing profile expectation, candidate overlap and validation hold. Gate predicates are grouped as image readiness, identification evidence and validation policy. An experimental profile no longer appears as though the user merely needs a better photograph.
+
+A profile audit found that the 22-record source-backed knowledge base already contains flower-display facts, but the image ranker consumes mainly broad pixel ranges. Crop-level visible-structure expectations are now explicit, sourced and scoped separately from botanical inflorescence form. Plumeria can match a single-large-flower crop only when one dominant open blossom is selected; flowering dandelion's all-ray head and bougainvillea's bract-dominant display remain outside the observer schema. Lotus remains a knowledge-only semantic match because it does not yet have a tested image profile.
+
+Visible-structure comparisons are inspect-only: match, conflict, profile unknown, image unresolved and unsupported states do not change scores. This is deliberate because the 16-image pilot was used for tuning and cannot justify new ranking weight. Automatic acceptance remains disabled, all profiles remain experimental, the structure pilot still reports 11/12 positive agreement and 4/4 hard-case abstention, and all 20 reserved benchmark images remain untouched. Validation: 90 automated tests pass, including a DOM render harness for the new evidence trace. Full browser visual QA was unavailable because no local Playwright browser executable was installed.
+
+These changes improve explanation and failure diagnosis, not identification accuracy. Candidate overlap remains substantial; the prior 30-image development benchmark contained 18 ties and usable leaf evidence appeared once. Next: create and review a Lotus image profile separately from water lily, freeze the trace/profile schema, then evaluate whether visible-structure comparisons reduce overlap on a larger independent set before assigning ranking weight or validating any profile.

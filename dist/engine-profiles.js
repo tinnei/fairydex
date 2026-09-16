@@ -34,5 +34,27 @@ ENGINE_PROFILES.push({id:'sunflower',name:'Sunflower / 向日葵',latin:'Heliant
 
 for(const p of ENGINE_PROFILES){if(['sunflower','daisy','bidens'].includes(p.id))p.headLayout='disc_with_outer_rays';if(p.id==='dandelion'&&p.stage==='flowering')p.headLayout='all_rays';}
 
+// Crop-level expectations for the v2 evidence trace. These compare a measured
+// observation with source-backed plant knowledge but remain inspect-only until
+// an independent structure evaluation authorizes ranking weight.
+const VISIBLE_STRUCTURE_EXPECTATIONS={
+ hibiscus:{allowed:['single_large_flower_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:hibiscus',scope:'One dominant open flower crop; double and heavily occluded forms remain unreviewed'},
+ waterlily:{allowed:['single_large_flower_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:waterlily',scope:'One dominant open flower crop; leaf attachment is a separate discriminator'},
+ poppy:{allowed:['single_large_flower_candidate'],status:'source_only',sourceRecord:'botanical-knowledge:poppy',scope:'Single open flower view; not evaluated by the structure pilot'},
+ plumeria:{allowed:['single_large_flower_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:plumeria',scope:'Only when one dominant open blossom is selected; multiple large flowers must remain unresolved'},
+ ixora:{allowed:['small_flower_cluster_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:ixora',scope:'Cluster crop with several separate small corollas'},
+ lantana:{allowed:['small_flower_cluster_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:lantana',scope:'Cluster crop with several separate small corollas'},
+ sunflower:{allowed:['composite_head_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:sunflower',scope:'Disc-plus-ray head only'},
+ daisy:{allowed:['composite_head_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:daisy',scope:'Disc-plus-ray head only'},
+ bidens:{allowed:['composite_head_candidate'],status:'development_supported',sourceRecord:'botanical-knowledge:bidens',scope:'Disc-plus-ray head; the smaller angled pilot view abstained'},
+ clover:{allowed:['small_flower_cluster_candidate'],status:'source_only',sourceRecord:'botanical-knowledge:clover',scope:'Botanical cluster semantics; crop-level observer mapping is not evaluated'},
+ bluebell:{allowed:['small_flower_cluster_candidate'],status:'source_only',sourceRecord:'botanical-knowledge:bluebell',scope:'Raceme/cluster semantics; crop-level observer mapping is not evaluated'},
+ bougainvillea:{allowed:[],status:'unsupported_observer_class',sourceRecord:'botanical-knowledge:bougainvillea',scope:'Bract-dominant displays are outside the current three positive observer classes'}
+};
+for(const p of ENGINE_PROFILES){
+ const expectation=p.id==='dandelion'&&p.stage==='flowering'?{allowed:[],status:'unsupported_observer_class',sourceRecord:'botanical-knowledge:dandelion',scope:'All-ray flowering head is outside the current disc-plus-ray observer class'}:p.id==='dandelion'?null:VISIBLE_STRUCTURE_EXPECTATIONS[p.id];
+ if(expectation)p.visibleStructureExpectation={observationScope:'selected_crop',rankingMode:'inspect_only',...expectation};
+}
+
 // Provisional visible-region layouts; these never provide the observed count.
 for(const p of ENGINE_PROFILES){if(['hibiscus','plumeria'].includes(p.id))p.regionLayout=['few_broad'];if(['sunflower','daisy','bidens'].includes(p.id))p.regionLayout=['many_narrow'];}

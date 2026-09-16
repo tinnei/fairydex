@@ -13,7 +13,7 @@
 <body>
 <header>
  <div><strong>FLOWER LENS</strong><span>/ IDENTIFICATION TEST V2</span></div>
- <nav class="header-links" aria-label="Project"><code>pipeline 0.16.0</code><a href="/">Original test</a><a href="/benchmarks">Benchmarks</a><a href="/characters">Character map</a><a href="/collect">Field collection</a></nav>
+ <nav class="header-links" aria-label="Project"><code>pipeline 0.18.0</code><a href="/">Original test</a><a href="/benchmarks">Benchmarks</a><a href="/characters">Character map</a><a href="/collect">Field collection</a></nav>
 </header>
 <main class="v2-main">
  <section class="controls v2-controls">
@@ -41,24 +41,29 @@
    <div id="triageCards" class="triage-grid"><p class="empty">No data</p></div>
   </article>
 
+  <article class="panel mapping-panel">
+   <div class="panel-head"><h2>03 / IMAGE EVIDENCE → IDENTIFICATION</h2><span>measurements do not come from the candidate profile</span></div>
+   <div id="evidenceMap" class="evidence-map"><p class="empty">Upload an image to trace the evidence path.</p></div>
+  </article>
+
   <article class="panel features primary-panel">
-   <div class="panel-head"><h2>03 / PRIMARY EVIDENCE GATE</h2><span>flower · colour · shape · centre · stage hypothesis</span></div>
+   <div class="panel-head"><h2>04 / PRIMARY EVIDENCE GATE</h2><span>flower · colour · shape · centre · structure · stage hypothesis</span></div>
    <div id="featureRows" class="gate-content"><p class="empty">No data</p></div>
   </article>
 
   <article class="panel secondary-panel">
-   <div class="panel-head"><h2>04 / SECONDARY EVIDENCE</h2><span id="secondaryStatus">waiting</span></div>
+   <div class="panel-head"><h2>05 / SECONDARY EVIDENCE</h2><span id="secondaryStatus">waiting</span></div>
    <div class="secondary-body"><p id="secondaryRoute">Runs only for an eligible primary insufficiency.</p><dl><div><dt>Leaf candidate</dt><dd id="leafEvidence">—</dd></div><div><dt>Association</dt><dd>Unverified</dd></div><div><dt>Rank changes</dt><dd id="rankChanges">—</dd></div></dl></div>
   </article>
 
   <article class="panel summary outcome-panel">
-   <div class="panel-head"><h2>05 / FINAL OUTCOME</h2><span id="runStatus" class="status idle">IDLE</span></div>
-   <div class="outcome-body"><p id="prediction" class="outcome-name">—</p><p id="latin" class="outcome-latin">—</p><dl><div><dt>Outcome</dt><dd id="decision">—</dd></div><div><dt>Internal state</dt><dd id="plantPart">—</dd></div><div><dt>Stage</dt><dd id="growthStage">—</dd></div><div><dt>Top score</dt><dd id="topScore">—</dd></div><div><dt>Lead</dt><dd id="leadScore">—</dd></div><div hidden><dt>Visible regions</dt><dd id="petalCount">—</dd></div><div hidden><dt>Count note</dt><dd id="petalCountNote">—</dd></div></dl><p id="decisionLog" class="log">Upload an image to begin.</p><p id="followUp" class="follow-up"></p></div>
+   <div class="panel-head"><h2>06 / FINAL OUTCOME</h2><span id="runStatus" class="status idle">IDLE</span></div>
+   <div class="outcome-body"><p id="prediction" class="outcome-name">—</p><p id="latin" class="outcome-latin">—</p><dl><div><dt>Outcome</dt><dd id="decision">—</dd></div><div><dt>Internal state</dt><dd id="plantPart">—</dd></div><div><dt>Stage</dt><dd id="growthStage">—</dd></div><div><dt>Top score</dt><dd id="topScore">—</dd></div><div><dt>Lead</dt><dd id="leadScore">—</dd></div><div hidden><dt>Visible regions</dt><dd id="petalCount">—</dd></div><div hidden><dt>Count note</dt><dd id="petalCountNote">—</dd></div></dl><p id="decisionLog" class="log">Upload an image to begin.</p><section class="ambiguity-box"><h3>WHY THIS REMAINS UNDER REVIEW</h3><ul id="ambiguityReasons"></ul></section><p id="followUp" class="follow-up"></p></div>
   </article>
 
   <article class="panel candidates ranking-panel">
    <div class="panel-head"><h2>PRIMARY → FINAL RANK</h2><span>secondary changes are explicit</span></div>
-   <table><thead><tr><th>#</th><th>Candidate</th><th>Primary</th><th>Final</th><th>Adjustment</th><th>Coverage</th></tr></thead><tbody id="candidateRows"><tr><td colspan="6">No data</td></tr></tbody></table>
+   <table><thead><tr><th>#</th><th>Candidate</th><th>Structure mapping</th><th>Primary</th><th>Final</th><th>Leaf adjustment</th><th>Coverage</th></tr></thead><tbody id="candidateRows"><tr><td colspan="7">No data</td></tr></tbody></table>
   </article>
 
   <article class="panel raw raw-panel">
