@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="Primary-first, conditional-secondary Flower Lens identification test.">
+ <title>Identification Test v2 · Flower Lens</title>
+ <link rel="stylesheet" href="/styles.css">
+ <link rel="stylesheet" href="/segmentation-v2.css">
+ <link rel="stylesheet" href="/guided.css">
+ <link rel="stylesheet" href="/identification-v2.css">
+</head>
+<body>
+<header>
+ <div><strong>FLOWER LENS</strong><span>/ IDENTIFICATION TEST V2</span></div>
+ <nav class="header-links" aria-label="Project"><code>pipeline 0.16.0</code><a href="/">Original test</a><a href="/benchmarks">Benchmarks</a><a href="/characters">Character map</a><a href="/collect">Field collection</a></nav>
+</header>
+<main class="v2-main">
+ <section class="controls v2-controls">
+  <div class="control-title"><h1>Primary evidence first</h1><p>Secondary leaf evidence runs only when the flower remains unclear.</p></div>
+  <div class="upload" id="uploadArea"><input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp" hidden><button id="uploadButton" type="button">SELECT IMAGE</button><span>or drop file</span></div>
+  <div class="settings"><label>Min score <input id="scoreThreshold" type="number" min="0" max="3" step="0.01" value="0.72"></label><label>Min lead <input id="marginThreshold" type="number" min="0" max="1" step="0.01" value="0.12"></label></div>
+  <p class="warning">Experimental route · match strength is not probability</p>
+ </section>
+
+ <section class="v2-workspace">
+  <article class="panel image-panel v2-image">
+   <div class="panel-head"><h2>01 / IMAGE + REGIONS</h2><span id="fileMeta">No image</span></div>
+   <div class="image-box"><p id="placeholder">Waiting for image</p><div id="imageViews" hidden>
+    <figure class="source-view"><img id="preview" alt="Uploaded test image"><figcaption>ORIGINAL</figcaption></figure>
+    <figure><canvas id="maskPreview"></canvas><figcaption>FLOWER CROP</figcaption></figure>
+    <figure><canvas id="centreMaskPreview"></canvas><figcaption>CENTRE</figcaption></figure>
+    <figure><canvas id="rayMaskPreview"></canvas><figcaption>OUTER RAYS</figcaption></figure>
+    <figure><canvas id="petalPreview"></canvas><figcaption>REGION CANDIDATES</figcaption></figure>
+    <figure><canvas id="edgePreview"></canvas><figcaption>INTERNAL EDGES</figcaption></figure>
+   </div><div id="processing" hidden>RUNNING TRIAGE + PRIMARY EVIDENCE…</div></div>
+  </article>
+
+  <article class="panel triage-panel">
+   <div class="panel-head"><h2>02 / QUICK TRIAGE</h2><span>full-frame observations</span></div>
+   <div id="triageCards" class="triage-grid"><p class="empty">No data</p></div>
+  </article>
+
+  <article class="panel features primary-panel">
+   <div class="panel-head"><h2>03 / PRIMARY EVIDENCE GATE</h2><span>flower · colour · shape · centre · stage hypothesis</span></div>
+   <div id="featureRows" class="gate-content"><p class="empty">No data</p></div>
+  </article>
+
+  <article class="panel secondary-panel">
+   <div class="panel-head"><h2>04 / SECONDARY EVIDENCE</h2><span id="secondaryStatus">waiting</span></div>
+   <div class="secondary-body"><p id="secondaryRoute">Runs only for an eligible primary insufficiency.</p><dl><div><dt>Leaf candidate</dt><dd id="leafEvidence">—</dd></div><div><dt>Association</dt><dd>Unverified</dd></div><div><dt>Rank changes</dt><dd id="rankChanges">—</dd></div></dl></div>
+  </article>
+
+  <article class="panel summary outcome-panel">
+   <div class="panel-head"><h2>05 / FINAL OUTCOME</h2><span id="runStatus" class="status idle">IDLE</span></div>
+   <div class="outcome-body"><p id="prediction" class="outcome-name">—</p><p id="latin" class="outcome-latin">—</p><dl><div><dt>Outcome</dt><dd id="decision">—</dd></div><div><dt>Internal state</dt><dd id="plantPart">—</dd></div><div><dt>Stage</dt><dd id="growthStage">—</dd></div><div><dt>Top score</dt><dd id="topScore">—</dd></div><div><dt>Lead</dt><dd id="leadScore">—</dd></div><div hidden><dt>Visible regions</dt><dd id="petalCount">—</dd></div><div hidden><dt>Count note</dt><dd id="petalCountNote">—</dd></div></dl><p id="decisionLog" class="log">Upload an image to begin.</p><p id="followUp" class="follow-up"></p></div>
+  </article>
+
+  <article class="panel candidates ranking-panel">
+   <div class="panel-head"><h2>PRIMARY → FINAL RANK</h2><span>secondary changes are explicit</span></div>
+   <table><thead><tr><th>#</th><th>Candidate</th><th>Primary</th><th>Final</th><th>Adjustment</th><th>Coverage</th></tr></thead><tbody id="candidateRows"><tr><td colspan="6">No data</td></tr></tbody></table>
+  </article>
+
+  <article class="panel raw raw-panel">
+   <div class="panel-head"><h2>V2 DECISION RECORD</h2><button id="copyButton" type="button" disabled>COPY JSON</button></div>
+   <pre id="rawOutput">{}</pre>
+  </article>
+ </section>
+</main>
+<canvas id="analysisCanvas" width="160" height="160" hidden></canvas>
+<script src="/species-data.js"></script><script src="/app.js"></script><script src="/engine-profiles.js"></script><script src="/morphology.js"></script><script src="/engine-v3.js"></script><script src="/botanical-knowledge.js"></script><script src="/leaf-engine.js"></script><script src="/leaf-view.js"></script><script src="/identification-v2.js"></script><script src="/image-analysis.js"></script><script src="/engine-ui.js"></script><script src="/engine-ui-guided.js"></script><script src="/identification-v2-ui.js"></script>
+</body>
+</html>

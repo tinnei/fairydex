@@ -11,6 +11,7 @@ const FlowerImage=(()=>{
    if(proposal.quality.usable)for(let p=0;p<exclude.length;p++){const x=Math.min(coarse.width-1,Math.floor(p%leafCanvas.width/leafCanvas.width*coarse.width)),y=Math.min(coarse.height-1,Math.floor(Math.floor(p/leafCanvas.width)/leafCanvas.height*coarse.height));exclude[p]=proposal.masks.flower[y*coarse.width+x];}
    const leaf=LeafEngine.analyze(lp.data,leafCanvas.width,leafCanvas.height,exclude),knowledge=typeof BOTANICAL_KNOWLEDGE==='undefined'?null:BOTANICAL_KNOWLEDGE;out=LeafEngine.combine(out,leaf,LeafEngine.rank(leaf,knowledge));
   }
+  out.triage=typeof IdentificationV2==='undefined'?null:IdentificationV2.triage(proposal,out.leaf,initial.head_structure);
   out.image={original:full,crop,detailWidth:canvas.width,detailHeight:canvas.height,coarseQuality:proposal.quality};return{out,canvas,leafCanvas};
  }
  return{analyze};

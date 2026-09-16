@@ -2,7 +2,7 @@ import { assets } from './assets.mjs';
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store'}});
 export default {async fetch(req,env){
  const url=new URL(req.url),path=url.pathname;
- if(!path.startsWith('/api/')){const key=path==='/benchmarks'||path==='/benchmarks/'?'/benchmarks.html':path==='/characters'||path==='/characters/'?'/characters.html':path==='/knowledge'||path==='/knowledge/'?'/knowledge.html':path==='/flowers'||path==='/flowers/'?'/flowers.html':path==='/collect'||path==='/collect/'?'/collect.html':path==='/'?'/index.html':path;const asset=assets[key];if(!asset)return new Response('Not found',{status:404});return new Response(Uint8Array.from(atob(asset.data),c=>c.charCodeAt(0)),{headers:{'Content-Type':asset.type}})}
+ if(!path.startsWith('/api/')){const key=path==='/identification-v2'||path==='/identification-v2/'?'/identification-v2.html':path==='/benchmarks'||path==='/benchmarks/'?'/benchmarks.html':path==='/characters'||path==='/characters/'?'/characters.html':path==='/knowledge'||path==='/knowledge/'?'/knowledge.html':path==='/flowers'||path==='/flowers/'?'/flowers.html':path==='/collect'||path==='/collect/'?'/collect.html':path==='/'?'/index.html':path;const asset=assets[key];if(!asset)return new Response('Not found',{status:404});return new Response(Uint8Array.from(atob(asset.data),c=>c.charCodeAt(0)),{headers:{'Content-Type':asset.type}})}
  const user=req.headers.get('oai-authenticated-user-id');if(!user)return json({error:'Sign in to use your collection.'},401);
  if(req.method!=='GET'&&req.headers.get('Origin')!==url.origin)return json({error:'Invalid request origin.'},403);
  if(!env.BUCKET)return json({error:'Collection storage unavailable. Please retry later.'},503);

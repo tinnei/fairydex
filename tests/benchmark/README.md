@@ -15,3 +15,11 @@ Metrics: 'correct' is a unique first candidate with usable flower evidence match
 Mask images are inspection aids, not segmentation ground truth. Complete leaf visibility, masks and exact petal counts have not been annotated. A nonempty mask is not evidence that it is correct. Selection excluded an apparent source-label mismatch and non-flowering/unrelated search hits before freezing the manifest. Reference-label mistakes may still exist.
 
 To compare meaningful changes, run the frozen development set after an engine revision, inspect regressions and review labels/masks. Then evaluate reserved cases only at a deliberate checkpoint. No threshold or species-profile tuning is included in this benchmark feature.
+
+## Identification Test v2 review fields
+
+The v2 orchestration record is separate from the frozen v1 benchmark snapshot. A future benchmark schema revision should preserve, per image: framing/scale triage, dominant-versus-multiple proposal status, head-grouping status, reliable blade visibility, primary ranks and gate predicates, the exact reason secondary evidence did or did not run, before/after ranks and adjustments, and the final outcome plus internal assessability state. Schema, dataset, options and split must match before paired comparison.
+
+Before reporting triage accuracy, manually annotate the 30 development photos for framing, target multiplicity/head grouping, flower-mask correctness and reliable leaf visibility. Do not infer these labels from the engine output. Keep all 20 reserved photos unrun until the v2 schema, gates and review metrics are frozen.
+
+An attributed development-only unknown/distractor set is required to evaluate `no_match` and false identification. Poor captures remain `ambiguous` / `not_assessable`, not `no_match`. Report primary-only ties/top-k, secondary invocation and availability, wins/regressions, outcome coverage, selective risk, false no-match on supported examples and false identification on unknowns. Logic and synthetic tests do not establish recognition accuracy.

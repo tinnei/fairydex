@@ -1,6 +1,6 @@
 # Flower Lens — project memory
 
-Last updated: 2026-09-15. Current milestone: reproducible Commons benchmark v1; image engine remains 0.15.
+Last updated: 2026-09-16. Current milestone: Identification Test v2 orchestration; image engine remains 0.15.
 
 ## Read first
 
@@ -222,3 +222,18 @@ Implementation reused the unfinished draft on verified Sites source v29, commit 
 **Limitations:** HEIC is unsupported. Metadata can be absent or stripped, and unknown details remain optional. Manual times use the phone's current timezone; offset-free photo timestamps retain their original wall-clock value. Real-phone native capture, permission behavior and browser layout have not yet been verified. Publication is verified separately by the deployment response.
 
 **Next:** verify the flow on a real phone, including older uploads, retakes and location denial. Collection URL: https://flower-lens-field-guide.tinneibook.chatgpt.site/collect .
+
+
+## 2026-09-16 — Identification Test v2 orchestration (0.16)
+
+User decision: test a primary-first identification pipeline. The original automatic test remains available at `/`; the new `/identification-v2` page exposes five stages: full-frame triage, primary flower evidence, a decision gate, conditional secondary leaf evidence, and a final identified / ambiguous / no-match outcome.
+
+Triage records framing/scale, one dominant versus several similarly prominent colour-region proposals, one detected disc/ray head candidate, and visibility of a complete-looking nearby green blade. These are bounded image-region observations, not verified physical distance, flower count, crown count, leaf identity or plant association. Tight/clipped, wide/small, multi-candidate and unresolved cases are explicit and cannot silently pass the primary gate.
+
+Primary ranking uses the existing flower score before leaf adjustment. The gate records every predicate: usable extraction, usable framing, one dominant target candidate, evidence coverage, required traits, independent measured groups, minimum match strength and minimum lead. A pass skips secondary evidence for decision purposes. An eligible near tie or missing discriminator may invoke the existing bounded nearby-leaf penalty; before/after ranks and score changes are recorded. Secondary evidence cannot repair an unusable flower region or invent an unseen trait.
+
+All outcomes remain experimental and require review. `identified` requires one supported-catalogue leader to pass every declared predicate, including a validated profile; none of the current profiles has that status, so current real-photo runs remain review-required even when score and lead are high. Poor input is `ambiguous` with internal state `not_assessable`, never `no_match`. `no_match` is restricted to usable, sufficiently covered evidence below a conservative compatibility floor; it still needs validation on an attributed unknown/distractor set. Automatic acceptance remains disabled.
+
+Validation: unit checks cover triage boundaries, bounded claims, primary-pass secondary skip, eligible secondary reranking, not-assessable versus no-match semantics and stage visibility. Route and asset tests cover the new page. The full build/test baseline must pass before release. These are orchestration and logic checks, not recognition-accuracy evidence. The 30-image development benchmark is unchanged and the 20 reserved images remain untouched.
+
+Limitations: current full-frame proposal count is not a flower/head count, and only one selected disc/ray head can be reported. The current benchmark has no manual triage labels, mask ground truth or unknown/distractor cases. Nearby leaf evidence was available in only one prior development image. Next: annotate the 30 development photos for framing, target multiplicity, mask correctness and reliable leaf visibility; determine whether a reproducible multi-scale candidate-count rule agrees with those labels before adding a multi-head detector.

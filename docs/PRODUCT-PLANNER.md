@@ -133,3 +133,11 @@ The next engine iteration should not add more broad species ranges first. It sho
 ### 15 September 2026 — use active follow-up instead of silent weak evidence
 
 When the top two candidates differ mainly by a missing leaf, attachment, side-view, or habitat trait, Flower Lens should ask for that evidence directly. Optional date and approximate location may rerank candidates but must never overpower a visible diagnostic conflict.
+
+### 16 September 2026 — primary-first, conditional secondary evidence
+
+Identification Test v2 makes routing inspectable: triage the frame and target proposal, rank with primary flower/head evidence, run a declared decision gate, and consult nearby leaf evidence only for an eligible unresolved distinction. A primary pass skips secondary evidence for the decision. Missing secondary evidence stays neutral, and a bounded leaf adjustment cannot rescue unusable segmentation or supply unobserved anatomy.
+
+The interface distinguishes `identified`, `ambiguous` and `no_match`, while retaining an internal `not_assessable` state for poor or multi-target input. `identified` also requires a validated profile; because current profiles are experimental, high score and lead alone remain review-required. `no_match` requires usable, sufficiently covered evidence below a conservative compatibility floor and must be validated with unknown/distractor photographs before product use.
+
+Next planning question: using only current full-frame and flower-proposal outputs, can a reproducible multi-scale rule distinguish one candidate from multiple flower/head candidates on the 30 development photos without treating raw proposal count as botanical flower count? If not, specify the smallest additional object-proposal output and annotation needed.
