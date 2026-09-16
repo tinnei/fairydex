@@ -1,6 +1,6 @@
 # Flower Lens — project memory
 
-Last updated: 2026-09-16. Current milestone: Identification Test v2 orchestration; image engine remains 0.15.
+Last updated: 2026-09-16. Current milestone: visible floral structure pilot; image engine remains 0.15.
 
 ## Read first
 
@@ -237,3 +237,14 @@ All outcomes remain experimental and require review. `identified` requires one s
 Validation: unit checks cover triage boundaries, bounded claims, primary-pass secondary skip, eligible secondary reranking, not-assessable versus no-match semantics and stage visibility. Route and asset tests cover the new page. The full build/test baseline must pass before release. These are orchestration and logic checks, not recognition-accuracy evidence. The 30-image development benchmark is unchanged and the 20 reserved images remain untouched.
 
 Limitations: current full-frame proposal count is not a flower/head count, and only one selected disc/ray head can be reported. The current benchmark has no manual triage labels, mask ground truth or unknown/distractor cases. Nearby leaf evidence was available in only one prior development image. Next: annotate the 30 development photos for framing, target multiplicity, mask correctness and reliable leaf visibility; determine whether a reproducible multi-scale candidate-count rule agrees with those labels before adding a multi-head detector.
+
+
+## 2026-09-16 — visible floral structure pilot (0.17)
+
+Added a species-independent observer for four bounded image-level outputs: `single_large_flower_candidate`, `composite_head_candidate`, `small_flower_cluster_candidate` and `unresolved`. A composite-head observation requires both stable central disc repetition and a surrounding outer-ray annulus; central texture alone cannot trigger it. A small-flower cluster requires distributed repeated texture and region evidence. These observations are inspectable only and add no ranking weight.
+
+On the predeclared 16-image development pilot, the observer agreed with 11/12 positive reviews: single large flower 4/4, composite head 3/4 (`bidens-02` unresolved), and small-flower cluster 4/4. All four hard or deliberately out-of-scope cases remained unresolved, and none of the four single-large-flower examples was falsely labelled composite. The narrow schema intentionally leaves an all-ray dandelion head unresolved rather than forcing it into the disc-plus-rays class. All 84 tests pass.
+
+The uploaded lotus-like screenshot crop returned `single_large_flower_candidate` in an ad hoc regression check. Its source is unknown and it is not accuracy evidence. Thresholds and rules were tuned on this development pilot, so these results are development evidence rather than validation. The 20 reserved benchmark images remain untouched.
+
+Next: freeze the observer, annotation schema and acceptance metrics, then evaluate a larger independent set covering viewpoints, scale, occlusion, double forms, bract-dominant displays, all-ray heads and distractors before connecting structure to ranking or making recognition claims.
