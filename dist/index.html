@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fafbf8">
+  <meta name="description" content="Explore a flower photo, follow the visible clues, and review possible matches.">
+  <title>Flower Lens · Follow the clues</title>
+  <link rel="stylesheet" href="/flow.css">
+  <script defer src="/vendor/lucide.min.js"></script>
+  <script defer src="/engine-profiles.js"></script><script defer src="/engine-v3.js"></script>
+  <script type="module" src="/flow.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Flower Lens home"><i data-lucide="leaf"></i><span>Flower Lens</span></a>
+    <nav aria-label="Identification progress" id="progress"></nav>
+    <span class="header-note">Explore plants, one detail at a time.</span>
+  </header>
+  <main id="main">
+    <div class="page-heading"><div><p class="eyebrow" id="eyebrow">A LITTLE CURIOSITY GOES A LONG WAY</p><h1 id="title">Choose a test image</h1><p id="subtitle">Start with a sample, or bring a flower of your own.</p></div><span class="experiment"><i data-lucide="flask-conical"></i>Experimental field guide</span></div>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <div id="content"></div>
+  </main>
+  <footer class="site-footer"><span>Observe first. Identify thoughtfully.</span><div><button id="creditsButton" class="text-button">Photo credits</button><a href="/dev/">Developer tools <i data-lucide="arrow-up-right"></i></a></div></footer>
+  <input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+  <dialog id="credits"><div class="dialog-heading"><h2>Sample photo credits</h2><button class="icon-button" id="closeCredits" aria-label="Close credits"><i data-lucide="x"></i></button></div><p>Wikimedia Commons reference photos. Search labels are unverified and never supplied to the recognizer.</p><div id="creditList"></div></dialog>
+  <noscript><p class="notice">Enable JavaScript to process photos in your browser.</p></noscript>
+</body>
+</html>

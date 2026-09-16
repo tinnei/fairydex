@@ -1,0 +1,17 @@
+// Experimental measurable profiles, not validated botanical probabilities.
+// Each rule: feature, allowed minimum/maximum, importance. Missing features abstain.
+const ENGINE_PROFILES = [
+ {id:'hibiscus',name:'Hibiscus / 朱槿',latin:'Hibiscus rosa-sinensis group',taxonRank:'horticultural group',stage:'flowering',part:'flower',rules:{colour:[['warm',.35,1,1]],shape:[['fill',.3,.95,1]],centre:[['center_yellow',0,.4,1]],surface:[['texture',0,.3,1]]}},
+ {id:'ixora',name:'Ixora / 龍船花',latin:'Ixora',taxonRank:'genus',stage:'flowering',part:'flower cluster',rules:{colour:[['warm',.3,1,1]],shape:[['fill',.15,.8,1]],centre:[['center_yellow',0,.6,1]],surface:[['texture',.15,.65,1]]}},
+ {id:'lantana',name:'Lantana / 馬纓丹',latin:'Lantana',taxonRank:'genus',stage:'flowering',part:'flower cluster',rules:{colour:[['warm',.25,1,1],['color_diversity',.3,1,1]],shape:[['fill',.25,.85,1]],centre:[['center_yellow',0,.8,1]],surface:[['texture',.12,.6,1]]}},
+ {id:'plumeria',name:'Frangipani / 雞蛋花',latin:'Plumeria',taxonRank:'genus',stage:'flowering',part:'flower',rules:{colour:[['pale_or_pink',.3,1,1]],shape:[['fill',.25,.85,1]],centre:[['center_yellow',.08,.9,1]],surface:[['texture',0,.22,1]]}},
+ {id:'bougainvillea',name:'Bougainvillea / 簕杜鵑',latin:'Bougainvillea',taxonRank:'genus',stage:'flowering',part:'flower/bract candidate',rules:{colour:[['pale_or_pink',.25,1,1]],shape:[['fill',.2,.9,1]],centre:[['center_yellow',0,.15,1]],surface:[['texture',0,.35,1]]}},
+ {id:'bidens',name:'Beggarticks / 鬼針草',latin:'Bidens',taxonRank:'genus',stage:'flowering',part:'flower head',rules:{colour:[['pale',.2,.95,1]],shape:[['fill',.15,.7,1]],centre:[['center_yellow',.15,1,2],['outer_yellow',0,.3,1]],surface:[['texture',0,.4,1]]}},
+ {id:'waterlily',name:'Water lily',latin:'Nymphaea',taxonRank:'genus',stage:'flowering',part:'flower',rules:{colour:[['pale_or_pink',.25,1,1]],shape:[['fill',.4,1,1]],centre:[['center_yellow',.08,1,1]],surface:[['texture',.04,.4,1]]}},
+ {id:'dandelion',name:'Dandelion',latin:'Taraxacum',taxonRank:'genus',stage:'flowering',part:'flower head',rules:{colour:[['yellow',.55,1,2]],shape:[['fill',.3,1,1]],centre:[['outer_yellow',.4,1,1]],surface:[['texture',.08,.6,1]]}},
+ {id:'dandelion',name:'Dandelion',latin:'Taraxacum',taxonRank:'genus',stage:'mature_seed_head',part:'seed-head candidate',rules:{colour:[['pale',.55,1,2],['yellow',0,.08,1]],shape:[['fill',.25,1,1]],centre:[['center_yellow',0,.08,1]],surface:[['texture',.12,.7,2]]}},
+ {id:'daisy',name:'Common daisy',latin:'Bellis perennis',taxonRank:'species candidate',stage:'flowering',part:'flower head',rules:{colour:[['pale',.3,1,1]],shape:[['fill',.35,.9,1]],centre:[['center_yellow',.2,1,2],['outer_yellow',0,.2,1]],surface:[['texture',.02,.4,1]]}},
+ {id:'poppy',name:'Poppy',latin:'Papaver',taxonRank:'genus',stage:'flowering',part:'flower',rules:{colour:[['red',.4,1,1]],shape:[['fill',.35,1,1]],centre:[['center_yellow',0,.12,1]],surface:[['texture',0,.3,1]]}},
+ {id:'clover',name:'Clover',latin:'Trifolium',taxonRank:'genus',stage:'flowering',part:'flower cluster',rules:{colour:[['pink',.35,1,1]],shape:[['fill',.35,1,1]],centre:[['center_yellow',0,.12,1]],surface:[['texture',.1,.6,1]]}},
+ {id:'bluebell',name:'Bluebell',latin:'Hyacinthoides',taxonRank:'genus',stage:'flowering',part:'flower candidate',rules:{colour:[['blue',.4,1,1]],shape:[['fill',.15,.8,1]],centre:[['center_yellow',0,.1,1]],surface:[['texture',0,.4,1]]}}
+];

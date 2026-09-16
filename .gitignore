@@ -1,0 +1,10 @@
+dist/server/
+dist/.openai/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Unrelated local pet artifacts
+output/pets/

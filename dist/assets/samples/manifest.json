@@ -1,0 +1,74 @@
+[
+  {
+    "file": "water-lily/water-lily-02.jpg",
+    "expectedLabel": "water-lily",
+    "commonsTitle": "File:Blue lotus (Nymphaea sp).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blue_lotus_(Nymphaea_sp).jpg",
+    "author": "AntanO",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Blue_lotus_%28Nymphaea_sp%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "/assets/samples/water-lily-02.jpg",
+    "title": "Test photo 01"
+  },
+  {
+    "file": "common-daisy/common-daisy-01.jpg",
+    "expectedLabel": "common-daisy",
+    "commonsTitle": "File:Bellis in May.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bellis_in_May.jpg",
+    "author": "Ввласенко",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Bellis_in_May.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "/assets/samples/common-daisy-01.jpg",
+    "title": "Test photo 02"
+  },
+  {
+    "file": "dandelion/dandelion-01.jpg",
+    "expectedLabel": "dandelion",
+    "commonsTitle": "File:2019-04-25 (159) Taraxacum officinale (common dandelion) at Haltgraben, Frankenfels, Austria.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:2019-04-25_(159)_Taraxacum_officinale_(common_dandelion)_at_Haltgraben,_Frankenfels,_Austria.jpg",
+    "author": "GT1976",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/2019-04-25_%28159%29_Taraxacum_officinale_%28common_dandelion%29_at_Haltgraben%2C_Frankenfels%2C_Austria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "/assets/samples/dandelion-01.jpg",
+    "title": "Test photo 03"
+  },
+  {
+    "file": "common-poppy/common-poppy-01.jpg",
+    "expectedLabel": "common-poppy",
+    "commonsTitle": "File:Amapola (Papaver rhoeas), Huérmeda, España 2012-05-17, DD 10.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amapola_(Papaver_rhoeas),_Hu%C3%A9rmeda,_Espa%C3%B1a_2012-05-17,_DD_10.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Amapola_%28Papaver_rhoeas%29%2C_Hu%C3%A9rmeda%2C_Espa%C3%B1a_2012-05-17%2C_DD_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "/assets/samples/common-poppy-01.jpg",
+    "title": "Test photo 04"
+  },
+  {
+    "file": "red-clover/red-clover-01.jpg",
+    "expectedLabel": "red-clover",
+    "commonsTitle": "File:Bombus rupestris - Trifolium pratense - Keila.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bombus_rupestris_-_Trifolium_pratense_-_Keila.jpg",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bombus_rupestris_-_Trifolium_pratense_-_Keila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "/assets/samples/red-clover-01.jpg",
+    "title": "Test photo 05"
+  },
+  {
+    "file": "common-bluebell/common-bluebell-01.jpg",
+    "expectedLabel": "common-bluebell",
+    "commonsTitle": "File:Bloemknop boshyacint (Hyacinthoides non-scripta). Locatie, De Famberhorst 01.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bloemknop_boshyacint_(Hyacinthoides_non-scripta)._Locatie,_De_Famberhorst_01.jpg",
+    "author": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bloemknop_boshyacint_%28Hyacinthoides_non-scripta%29._Locatie%2C_De_Famberhorst_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "/assets/samples/common-bluebell-01.jpg",
+    "title": "Test photo 06"
+  }
+]
