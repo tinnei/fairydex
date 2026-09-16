@@ -1,0 +1,822 @@
+{
+  "pilot": "visible-floral-structure-pilot-v1",
+  "created_at": "2026-09-16T08:23:36.774Z",
+  "scope": "Predeclared development-only coarse visible-structure pilot; not taxon accuracy evidence.",
+  "reserved_images_loaded": 0,
+  "summary": {
+    "positive_agreement": {
+      "agreed": 11,
+      "total": 12
+    },
+    "by_class": {
+      "single_large_flower_candidate": {
+        "agreed": 4,
+        "total": 4
+      },
+      "composite_head_candidate": {
+        "agreed": 3,
+        "total": 4
+      },
+      "small_flower_cluster_candidate": {
+        "agreed": 4,
+        "total": 4
+      }
+    },
+    "hard_routing": {
+      "unresolved": 4,
+      "total": 4
+    },
+    "single_large_false_composites": 0,
+    "confusion_matrix": {
+      "single_large_flower_candidate": {
+        "single_large_flower_candidate": 4,
+        "composite_head_candidate": 0,
+        "small_flower_cluster_candidate": 0,
+        "unresolved": 0
+      },
+      "composite_head_candidate": {
+        "single_large_flower_candidate": 0,
+        "composite_head_candidate": 3,
+        "small_flower_cluster_candidate": 0,
+        "unresolved": 1
+      },
+      "small_flower_cluster_candidate": {
+        "single_large_flower_candidate": 0,
+        "composite_head_candidate": 0,
+        "small_flower_cluster_candidate": 4,
+        "unresolved": 0
+      },
+      "unresolved": {
+        "single_large_flower_candidate": 0,
+        "composite_head_candidate": 0,
+        "small_flower_cluster_candidate": 0,
+        "unresolved": 4
+      }
+    },
+    "passed": true
+  },
+  "rows": [
+    {
+      "id": "hibiscus-01",
+      "expected": "single_large_flower_candidate",
+      "actual": "single_large_flower_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Large outer floral parts surround one shared central area; no supported repeated small-corolla or disc/ray pattern was found.",
+      "evidence": [
+        "large_outer_parts",
+        "shared_central_area"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 58400,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 7273,
+          "gradient": 0.04239557158763423,
+          "strong_edge_fraction": 0.11549566891241578,
+          "extrema_fraction": 0.05183555616664375
+        },
+        "outer_texture": {
+          "pixels": 36913,
+          "gradient": 0.0273566793249417,
+          "strong_edge_fraction": 0.028038902283748272,
+          "extrema_fraction": 0.040608999539457645
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.13998760585755582,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 7273,
+          "outer_pixels": 35179
+        },
+        "region_pattern": {
+          "count": 4,
+          "similarity": 1,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 4
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "hibiscus-03",
+      "expected": "single_large_flower_candidate",
+      "actual": "single_large_flower_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Large outer floral parts surround one shared central area; no supported repeated small-corolla or disc/ray pattern was found.",
+      "evidence": [
+        "large_outer_parts",
+        "shared_central_area"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 38100,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 6714,
+          "gradient": 0.04558936784126815,
+          "strong_edge_fraction": 0.08445040214477212,
+          "extrema_fraction": 0.06702412868632708
+        },
+        "outer_texture": {
+          "pixels": 23237,
+          "gradient": 0.047673832722829275,
+          "strong_edge_fraction": 0.11158927572406077,
+          "extrema_fraction": 0.07509575246374317
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.03806208095429959,
+          "annulus_angular_coverage": 0.9166666666666666,
+          "centre_pixels": 6714,
+          "outer_pixels": 21354
+        },
+        "region_pattern": {
+          "count": 4,
+          "similarity": 0.5,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 2
+        },
+        "petal_regions": {
+          "status": "stable_region_candidates",
+          "count": 3,
+          "shape": "mixed"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "plumeria-02",
+      "expected": "single_large_flower_candidate",
+      "actual": "single_large_flower_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Large outer floral parts surround one shared central area; no supported repeated small-corolla or disc/ray pattern was found.",
+      "evidence": [
+        "large_outer_parts",
+        "shared_central_area"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 24712,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 3794,
+          "gradient": 0.03496309549650126,
+          "strong_edge_fraction": 0.08882445967316815,
+          "extrema_fraction": 0.03400105429625725
+        },
+        "outer_texture": {
+          "pixels": 15212,
+          "gradient": 0.029830922568869486,
+          "strong_edge_fraction": 0.0633052853010781,
+          "extrema_fraction": 0.042137785958453855
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.14111738129330345,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 3794,
+          "outer_pixels": 14052
+        },
+        "region_pattern": {
+          "count": 5,
+          "similarity": 1,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 5
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "waterlily-02",
+      "expected": "single_large_flower_candidate",
+      "actual": "single_large_flower_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Large outer floral parts surround one shared central area; no supported repeated small-corolla or disc/ray pattern was found.",
+      "evidence": [
+        "large_outer_parts",
+        "shared_central_area"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 39262,
+        "edge_contact_fraction": 0.0020121236819316385,
+        "centre_texture": {
+          "pixels": 6527,
+          "gradient": 0.03619815066826478,
+          "strong_edge_fraction": 0.09024053929829937,
+          "extrema_fraction": 0.04228588938256473
+        },
+        "outer_texture": {
+          "pixels": 24447,
+          "gradient": 0.03670826237149859,
+          "strong_edge_fraction": 0.08696363561991247,
+          "extrema_fraction": 0.037141571562972965
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.14673422649198373,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 6527,
+          "outer_pixels": 22048
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "sunflower-03",
+      "expected": "composite_head_candidate",
+      "actual": "composite_head_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "A repeated fine disc-like centre and a surrounding ray-like annulus are both visible.",
+      "evidence": [
+        "disc_like_centre_repetition",
+        "outer_ray_annulus"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 72493,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 17338,
+          "gradient": 0.1270848339474214,
+          "strong_edge_fraction": 0.5718075902641596,
+          "extrema_fraction": 0.2348598454262314
+        },
+        "outer_texture": {
+          "pixels": 46748,
+          "gradient": 0.0671351342282438,
+          "strong_edge_fraction": 0.25930521091811415,
+          "extrema_fraction": 0.07427055702917772
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.4155534351220021,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 9509,
+          "outer_pixels": 44254
+        },
+        "region_pattern": {
+          "count": 8,
+          "similarity": 0.875,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 7
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": true,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "bidens-01",
+      "expected": "composite_head_candidate",
+      "actual": "composite_head_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "A repeated fine disc-like centre and a surrounding ray-like annulus are both visible.",
+      "evidence": [
+        "disc_like_centre_repetition",
+        "outer_ray_annulus"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 32209,
+        "edge_contact_fraction": 0.010525008537986278,
+        "centre_texture": {
+          "pixels": 6398,
+          "gradient": 0.04676021550852234,
+          "strong_edge_fraction": 0.18974679587371054,
+          "extrema_fraction": 0.08033760550171928
+        },
+        "outer_texture": {
+          "pixels": 18739,
+          "gradient": 0.014478453032314176,
+          "strong_edge_fraction": 0.03468701638294466,
+          "extrema_fraction": 0.01515555792731736
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.13893224457337797,
+          "annulus_angular_coverage": 0.9166666666666666,
+          "centre_pixels": 6398,
+          "outer_pixels": 16643
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "bidens-02",
+      "expected": "composite_head_candidate",
+      "actual": "unresolved",
+      "agreed": false,
+      "status": "unresolved",
+      "reason": "The visible structure is clipped or occluded.",
+      "evidence": [],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 46971,
+        "edge_contact_fraction": 0.013455110600157544,
+        "centre_texture": {
+          "pixels": 9011,
+          "gradient": 0.02389727783689204,
+          "strong_edge_fraction": 0.05659749195427811,
+          "extrema_fraction": 0.02186216846077017
+        },
+        "outer_texture": {
+          "pixels": 26806,
+          "gradient": 0.02422310676714137,
+          "strong_edge_fraction": 0.04741475789002462,
+          "extrema_fraction": 0.027829590390211146
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.04419013902723931,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 9011,
+          "outer_pixels": 25020
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "daisy-02",
+      "expected": "composite_head_candidate",
+      "actual": "composite_head_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "A repeated fine disc-like centre and a surrounding ray-like annulus are both visible.",
+      "evidence": [
+        "disc_like_centre_repetition",
+        "outer_ray_annulus"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 89696,
+        "edge_contact_fraction": 0.003779432750624331,
+        "centre_texture": {
+          "pixels": 12472,
+          "gradient": 0.053313325221043706,
+          "strong_edge_fraction": 0.17342847979474021,
+          "extrema_fraction": 0.060535599743425275
+        },
+        "outer_texture": {
+          "pixels": 58459,
+          "gradient": 0.04120187740092011,
+          "strong_edge_fraction": 0.1303819771121641,
+          "extrema_fraction": 0.034656767991241726
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.18303669532087552,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 12472,
+          "outer_pixels": 54247
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "ixora-01",
+      "expected": "small_flower_cluster_candidate",
+      "actual": "small_flower_cluster_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Several similarly scaled, spatially separate blossom-region candidates are visible; total flowers are not counted.",
+      "evidence": [
+        "separate_small_corolla_candidates",
+        "multiple_local_centres"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 42351,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 5988,
+          "gradient": 0.06996462467418517,
+          "strong_edge_fraction": 0.2518370073480294,
+          "extrema_fraction": 0.06847027388109553
+        },
+        "outer_texture": {
+          "pixels": 27904,
+          "gradient": 0.06854341945493819,
+          "strong_edge_fraction": 0.26598337155963303,
+          "extrema_fraction": 0.0742904243119266
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.04841401022675618,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 5988,
+          "outer_pixels": 26122
+        },
+        "region_pattern": {
+          "count": 6,
+          "similarity": 0.8333333333333334,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 5
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "ixora-03",
+      "expected": "small_flower_cluster_candidate",
+      "actual": "small_flower_cluster_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Several similarly scaled, spatially separate blossom-region candidates are visible; total flowers are not counted.",
+      "evidence": [
+        "separate_small_corolla_candidates",
+        "multiple_local_centres"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 58882,
+        "edge_contact_fraction": 0.0020549573723718626,
+        "centre_texture": {
+          "pixels": 7440,
+          "gradient": 0.07772481499051252,
+          "strong_edge_fraction": 0.28669354838709676,
+          "extrema_fraction": 0.12379032258064517
+        },
+        "outer_texture": {
+          "pixels": 39116,
+          "gradient": 0.07630884297885143,
+          "strong_edge_fraction": 0.29703957459862973,
+          "extrema_fraction": 0.1261632068718683
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.053769342948460606,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 7440,
+          "outer_pixels": 37186
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "lantana-01",
+      "expected": "small_flower_cluster_candidate",
+      "actual": "small_flower_cluster_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Several similarly scaled, spatially separate blossom-region candidates are visible; total flowers are not counted.",
+      "evidence": [
+        "separate_small_corolla_candidates",
+        "multiple_local_centres"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 18117,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 3643,
+          "gradient": 0.07560618591658465,
+          "strong_edge_fraction": 0.2994784518254186,
+          "extrema_fraction": 0.0807027175404886
+        },
+        "outer_texture": {
+          "pixels": 10579,
+          "gradient": 0.08616022215673269,
+          "strong_edge_fraction": 0.33623215804896495,
+          "extrema_fraction": 0.10946214197939313
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.11064062329828293,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 3643,
+          "outer_pixels": 9236
+        },
+        "region_pattern": {
+          "count": 7,
+          "similarity": 0.8571428571428571,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 6
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "lantana-02",
+      "expected": "small_flower_cluster_candidate",
+      "actual": "small_flower_cluster_candidate",
+      "agreed": true,
+      "status": "observed",
+      "reason": "Several similarly scaled, spatially separate blossom-region candidates are visible; total flowers are not counted.",
+      "evidence": [
+        "separate_small_corolla_candidates",
+        "multiple_local_centres"
+      ],
+      "review_route_reason": null,
+      "metrics": {
+        "flower_pixels": 31897,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 4533,
+          "gradient": 0.09737027463092036,
+          "strong_edge_fraction": 0.46106331347893226,
+          "extrema_fraction": 0.15684976836532097
+        },
+        "outer_texture": {
+          "pixels": 20800,
+          "gradient": 0.04030030825791852,
+          "strong_edge_fraction": 0.10572115384615384,
+          "extrema_fraction": 0.041490384615384616
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.27689134979287666,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 4533,
+          "outer_pixels": 19326
+        },
+        "region_pattern": {
+          "count": 6,
+          "similarity": 0.8333333333333334,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 5
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "bidens-03",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "agreed": true,
+      "status": "unresolved",
+      "reason": "The image evidence does not separate one large flower from repeated small floral units.",
+      "evidence": [],
+      "review_route_reason": "multiple_targets",
+      "metrics": {
+        "flower_pixels": 4991,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 875,
+          "gradient": 0.05886956862745096,
+          "strong_edge_fraction": 0.216,
+          "extrema_fraction": 0.14285714285714285
+        },
+        "outer_texture": {
+          "pixels": 3031,
+          "gradient": 0.04516629857485709,
+          "strong_edge_fraction": 0.1491257010887496,
+          "extrema_fraction": 0.10524579346750247
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.02053171585531276,
+          "annulus_angular_coverage": 0.9166666666666666,
+          "centre_pixels": 875,
+          "outer_pixels": 2654
+        },
+        "region_pattern": {
+          "count": 4,
+          "similarity": 0.75,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 3
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "plumeria-03",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "agreed": true,
+      "status": "unresolved",
+      "reason": "The visible structure is clipped or occluded.",
+      "evidence": [],
+      "review_route_reason": "multiple_targets",
+      "metrics": {
+        "flower_pixels": 60621,
+        "edge_contact_fraction": 0.0008083007538641724,
+        "centre_texture": {
+          "pixels": 7639,
+          "gradient": 0.06942972619863474,
+          "strong_edge_fraction": 0.23288388532530435,
+          "extrema_fraction": 0.08796962953266134
+        },
+        "outer_texture": {
+          "pixels": 38566,
+          "gradient": 0.09111877301249881,
+          "strong_edge_fraction": 0.36065446247990457,
+          "extrema_fraction": 0.11559404656951719
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.06170293005822084,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 7639,
+          "outer_pixels": 36855
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    },
+    {
+      "id": "bougainvillea-03",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "agreed": true,
+      "status": "unresolved",
+      "reason": "No reliable flower region is available for visible-structure review.",
+      "evidence": [],
+      "review_route_reason": "bract_dominant",
+      "metrics": {
+        "flower_pixels": 69,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 11,
+          "gradient": 0.08106327985739749,
+          "strong_edge_fraction": 0.45454545454545453,
+          "extrema_fraction": 0.7272727272727273
+        },
+        "outer_texture": {
+          "pixels": 41,
+          "gradient": 0.07107307508369202,
+          "strong_edge_fraction": 0.24390243902439024,
+          "extrema_fraction": 0.6341463414634146
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.025434580890982623,
+          "annulus_angular_coverage": 0.2916666666666667,
+          "centre_pixels": 11,
+          "outer_pixels": 39
+        },
+        "region_pattern": {
+          "count": 0,
+          "similarity": 0,
+          "radial_alignment": 0,
+          "distributed_centres": 0
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": true
+      }
+    },
+    {
+      "id": "dandelion-03",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "agreed": true,
+      "status": "unresolved",
+      "reason": "The image evidence does not separate one large flower from repeated small floral units.",
+      "evidence": [],
+      "review_route_reason": "all_ray_out_of_scope",
+      "metrics": {
+        "flower_pixels": 45034,
+        "edge_contact_fraction": 0,
+        "centre_texture": {
+          "pixels": 6553,
+          "gradient": 0.03423788775085799,
+          "strong_edge_fraction": 0.030672974210285364,
+          "extrema_fraction": 0.024111094155348695
+        },
+        "outer_texture": {
+          "pixels": 29218,
+          "gradient": 0.047579359688293146,
+          "strong_edge_fraction": 0.13762064480799507,
+          "extrema_fraction": 0.07902662742145253
+        },
+        "radial_pattern": {
+          "colour_contrast": 0.06356499812549778,
+          "annulus_angular_coverage": 1,
+          "centre_pixels": 6553,
+          "outer_pixels": 27109
+        },
+        "region_pattern": {
+          "count": 3,
+          "similarity": 0.6666666666666666,
+          "radial_alignment": 1,
+          "distributed_centres": 1,
+          "kept": 2
+        },
+        "petal_regions": {
+          "status": "unresolved",
+          "count": null,
+          "shape": "unknown"
+        },
+        "head_region_pair": false,
+        "coarse_multiple_candidates": false
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 const IdentificationV2=(()=>{
  const POLICY={schema_version:'0.1',minimum_primary_coverage:.5,minimum_primary_groups:3,no_match_ceiling:.35};
  const observation=(value,status,reason,evidence=[])=>({value,status,reason,evidence});
- function triage(proposal,leaf,head){
+ function triage(proposal,leaf,structure){
   const mask=proposal?.masks?.flower||[],w=proposal?.sample?.width||0,h=proposal?.sample?.height||0;
   let area=0,edge=0;
   for(let p=0;p<mask.length;p++)if(mask[p]){area++;const x=p%w,y=Math.floor(p/w);if(!x||!y||x===w-1||y===h-1)edge++;}
@@ -21,13 +21,13 @@ const IdentificationV2=(()=>{
    usable?observation('single_candidate','observed','One dominant flower-region candidate was selected; this is not a botanical flower count.',['coarse_proposals']):
    observation('unresolved','unresolved','The proposal set does not support a reliable single-versus-multiple judgement.',['coarse_proposals']);
 
-  const headGrouping=head?.status&&head.status!=='unknown'?
-   observation('one_head_candidate','region_candidate','One disc-and-outer-ray region was detected inside the selected crop; additional heads are not counted.',['centre_mask','outer_ray_mask']):
-   observation('unresolved','unresolved','Head or crown count is not measured by the current proposal method.');
+  const floralStructure=structure?.value?
+   observation(structure.value,structure.status,structure.reason,structure.evidence||[]):
+   observation('unresolved','unresolved','Visible floral structure was not measured.');
   const leafVisibility=leaf?.selectedId?
    observation('blade_candidate_visible','region_candidate','A complete-looking nearby green blade candidate is visible; association with the flower is unverified.',['leaf_candidate_'+leaf.selectedId]):
    observation('no_reliable_blade','unresolved',leaf?.observations?.reason||'No sufficiently complete isolated green blade was found.');
-  return {framing,flower_multiplicity:multiplicity,head_grouping:headGrouping,leaf_visibility:leafVisibility,diagnostics:{flower_region_coverage:coverage,edge_contact_fraction:edgeFraction,proposal_count:proposal?.quality?.proposal_count??0}};
+  return {framing,flower_multiplicity:multiplicity,visible_floral_structure:floralStructure,leaf_visibility:leafVisibility,diagnostics:{flower_region_coverage:coverage,edge_contact_fraction:edgeFraction,proposal_count:proposal?.quality?.proposal_count??0,structure_metrics:structure?.metrics||null}};
  }
  const score=(candidate,primary=false)=>primary?(candidate.flower_score??candidate.score):candidate.score;
  function ranked(candidates,primary){return candidates.map(candidate=>({...candidate,pipeline_score:score(candidate,primary)})).sort((a,b)=>b.pipeline_score-a.pipeline_score||String(a.id).localeCompare(String(b.id))).map((candidate,index)=>({...candidate,pipeline_rank:index+1}));}

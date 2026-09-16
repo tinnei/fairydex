@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --test tests/collection.test.mjs tests/engine.test.cjs tests/knowledge.test.cjs tests/leaf.test.cjs tests/benchmark.test.cjs tests/identification-v2.test.cjs tests/collect-flow.test.mjs tests/photo-metadata.test.mjs",
-    "benchmark": "node scripts/benchmark.cjs"
+    "test": "node --test tests/collection.test.mjs tests/engine.test.cjs tests/knowledge.test.cjs tests/leaf.test.cjs tests/benchmark.test.cjs tests/floral-structure.test.cjs tests/identification-v2.test.cjs tests/collect-flow.test.mjs tests/photo-metadata.test.mjs",
+    "benchmark": "node scripts/benchmark.cjs",
+    "structure-experiment": "node scripts/structure-experiment.cjs"
   }
 }
